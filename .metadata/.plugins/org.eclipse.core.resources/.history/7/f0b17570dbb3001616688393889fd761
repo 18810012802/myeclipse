@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+	<!-- 需要dtd -->
+		<!DOCTYPE hibernate-mapping PUBLIC 
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+		<!-- 映射，代表了一种关系 -->
+		<hibernate-mapping>
+		<!-- 代表了一个类和表的关系 -->
+			<class table="employee" name="com.libo.po.Employee">
+				<id name="eid" type="java.lang.String">
+					<column name="eid"></column>
+					<!-- 主键生成策略 -->
+					<generator class="increment"></generator>
+				</id>
+				<!-- 属性 -->
+				<property name="ename" column="ename" type="java.util.String" length="32"></property>
+				<property name="eage" column="eage" type="java.util.Integer"></property>
+			</class>
+		</hibernate-mapping>

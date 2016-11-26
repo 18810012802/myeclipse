@@ -33,7 +33,8 @@
 </head>
 
 <body style="margin:0px auto;">
-	<table id="table" align="center">
+<center>
+	<table id="table">
 	<div id="tb" style="padding:5px;height:auto;margin-left:150px;left:50%;width:300px;"">
 		<div style="margin-bottom:5px">
 			<a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true"
@@ -52,5 +53,7 @@
 				onclick="obj.search();">查询</a>
 		</div>
 	</div>
+	</table>
+	</center>
 </body>
 </html>

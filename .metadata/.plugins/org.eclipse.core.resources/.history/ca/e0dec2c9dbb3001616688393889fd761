@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+	<!-- 需要dtd -->
+		<!DOCTYPE hibernate-mapping PUBLIC 
+		"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+		<!-- 映射，代表了一种关系 -->
+		<hibernate-mapping>
+		<!-- 代表了一个类和表的关系 -->
+			<class table="employee" name="com.libo.po.TrainInfo">
+				<id name="no" type="java.lang.String">
+					<column name="no"></column>
+					<!-- 主键生成策略 -->
+					<generator class="assigned"></generator>
+				</id>
+				<!-- 属性 -->
+				<property name="train_no" column="train_no" type="java.lang.String"></property>
+				<property name="start_station" column="start_station" type="java.lang.String"></property>
+			</class>
+		</hibernate-mapping>

@@ -1,0 +1,47 @@
+package com.libo.utils;
+
+import java.util.Properties;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistryBuilder;
+
+public class HibernateSessionUtil {
+	
+	/*Public class SingletonTest{
+		Private static SingletonTest instance=null;//静态化，防止被引用，赋值为空，延迟加载，//提高性能
+		Private SingletonTest(){//私有构造方法，防止被实例化
+		}
+		Private static synchronized void syncInit(){//在创建类时进行同步
+		     If(instance==null){
+		     Instance=new SingletonTest();
+		     }
+		}
+		Public static SingletonTestgetInstance(){//静态方法创建实例
+		     If(instance==null){
+		     syncInit();
+		     }
+		     Return instance;
+		}
+		}*/
+
+	
+	public static SessionFactory sessionFactory;
+	static{
+		//1.读取这个核心配置文件[配置文件叫hibernate.cfg.xml/在src下]
+		Configuration config=new Configuration().configure();
+		//2.获取配置信息
+		Properties pros=config.getProperties();
+		//3.注册服务。
+		ServiceRegistryBuilder builder=new ServiceRegistryBuilder();
+		builder.applySettings(pros);
+		//4.获取sessionfactory 
+		sessionFactory=config.buildSessionFactory(builder.buildServiceRegistry());
+	}
+	public static Session getSession(){
+						//5.获取session对象
+				Session session=sessionFactory.openSession();//打开数据库连接
+				return session;
+	}
+}
