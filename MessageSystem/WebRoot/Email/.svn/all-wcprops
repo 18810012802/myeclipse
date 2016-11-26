@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/news/!svn/ver/571/MessageSystem/WebRoot/Email
+END
+relook.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/news/!svn/ver/561/MessageSystem/WebRoot/Email/relook.jsp
+END
+sendemail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/news/!svn/ver/555/MessageSystem/WebRoot/Email/sendemail.jsp
+END
+resend.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/news/!svn/ver/570/MessageSystem/WebRoot/Email/resend.jsp
+END
+receiveemail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/news/!svn/ver/571/MessageSystem/WebRoot/Email/receiveemail.jsp
+END
+giveemail.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/news/!svn/ver/571/MessageSystem/WebRoot/Email/giveemail.jsp
+END
+look.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/news/!svn/ver/561/MessageSystem/WebRoot/Email/look.jsp
+END

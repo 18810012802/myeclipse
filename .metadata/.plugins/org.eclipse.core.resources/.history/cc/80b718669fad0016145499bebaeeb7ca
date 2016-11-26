@@ -1,0 +1,10 @@
+package com.lib.dao.publish;
+
+import java.util.List;
+
+import com.libo.entity.Msg_manuscripts;
+
+public interface PublishDao {
+	public List<Msg_manuscripts> queryManuscripts(int page,int pageSize);
+	public int[] queryManuscriptsCount();
+}

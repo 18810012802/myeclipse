@@ -1,0 +1,46 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/ckeditor/_source/plugins/specialchar
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+dialogs
+dir
+
+lang
+dir
+
+plugin.js
+file
+
+
+
+
+2016-11-18T03:32:52.803285Z
+dc0bf089498b68996ffe876658ae35db
+2016-11-14T02:16:11.932135Z
+5
+lichao
+

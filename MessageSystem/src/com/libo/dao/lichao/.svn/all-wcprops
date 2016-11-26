@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/news/!svn/ver/466/MessageSystem/src/com/libo/dao/lichao
+END
+InfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/news/!svn/ver/466/MessageSystem/src/com/libo/dao/lichao/InfoDao.java
+END
+YetInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/news/!svn/ver/439/MessageSystem/src/com/libo/dao/lichao/YetInfoDao.java
+END
+UserDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/news/!svn/ver/327/MessageSystem/src/com/libo/dao/lichao/UserDao.java
+END
+WaitInfoDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/news/!svn/ver/360/MessageSystem/src/com/libo/dao/lichao/WaitInfoDao.java
+END
+MsgFileDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/news/!svn/ver/418/MessageSystem/src/com/libo/dao/lichao/MsgFileDao.java
+END

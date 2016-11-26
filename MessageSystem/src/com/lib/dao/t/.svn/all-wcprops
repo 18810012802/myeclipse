@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/news/!svn/ver/527/MessageSystem/src/com/lib/dao/t
+END
+Org_employeeDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/news/!svn/ver/315/MessageSystem/src/com/lib/dao/t/Org_employeeDao.java
+END
+Msg_ReceiveDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/news/!svn/ver/462/MessageSystem/src/com/lib/dao/t/Msg_ReceiveDao.java
+END
+Msg_fileDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/news/!svn/ver/527/MessageSystem/src/com/lib/dao/t/Msg_fileDao.java
+END
+File_attachDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/news/!svn/ver/448/MessageSystem/src/com/lib/dao/t/File_attachDao.java
+END
+Msg_ManuscriptsDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/news/!svn/ver/411/MessageSystem/src/com/lib/dao/t/Msg_ManuscriptsDao.java
+END

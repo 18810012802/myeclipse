@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/news/!svn/ver/468/MessageSystem/src/com/libo/service/lichao
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/news/!svn/ver/329/MessageSystem/src/com/libo/service/lichao/UserService.java
+END
+WaitInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/news/!svn/ver/362/MessageSystem/src/com/libo/service/lichao/WaitInfoService.java
+END
+MsgFileService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/news/!svn/ver/422/MessageSystem/src/com/libo/service/lichao/MsgFileService.java
+END
+InfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/news/!svn/ver/468/MessageSystem/src/com/libo/service/lichao/InfoService.java
+END
+YetInfoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/news/!svn/ver/441/MessageSystem/src/com/libo/service/lichao/YetInfoService.java
+END

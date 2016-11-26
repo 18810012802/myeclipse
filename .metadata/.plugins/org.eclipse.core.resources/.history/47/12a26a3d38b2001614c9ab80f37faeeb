@@ -1,0 +1,25 @@
+$(function(){
+	$.fn.droppable.defaults.disabled=false;
+	$('#dd').droppable({
+		accept:'#box',
+		onDragEnter:function(e,source){
+			//console.log(source);
+			$(this).css('background','blue');
+		},
+		onDragOver:function(e,source){
+			//console.log(source);
+			$(this).css('background','grey');
+		},
+		onDragLeave:function(e,source){
+			//console.log(source);
+			$(this).css('background','black');
+		},
+		onDrop:function(e,source){
+			//console.log(source);
+			$(this).css('background','green');
+		},
+	});
+	$('#box').draggable({
+		
+	});
+})

@@ -1,0 +1,58 @@
+package com.libo.entity;
+
+import java.sql.Date;
+
+/**
+ * �����
+ * @author Administrator
+ *
+ */
+public class Msg_file_list {
+	
+	public Msg_file_list() {
+		
+	}
+	public Msg_file_list(int id, int createUserId, Date createDate, String title,
+			String author, String from, String type, String filetype,
+			String content, int maId, String number, int state, Date sendDate,
+			int sendUser, int flag) {
+	
+		this.id = id;
+		this.createUserId = createUserId;
+		this.createDate = createDate;
+		this.title = title;
+		this.author = author;
+		this.from = from;
+		this.type = type;
+		this.filetype = filetype;
+		this.content = content;
+		this.maId = maId;
+		this.number = number;
+		this.state = state;
+		this.sendDate = sendDate;
+		this.sendUser = sendUser;
+		this.flag = flag;
+	}
+	
+
+
+	private int id;//����;
+	private int createUserId;//�����Աid;
+	private Date createDate;//���ʱ��;
+	private String title;//����;
+	private String author;//����;
+	private String from;//��Դ;
+	private String type;//���;
+	private String filetype;//����;
+	private String content;//�������;
+	private int maId;//����Լ��id;
+	private String number;//�ں�;
+	private int state;//���״̬: 0. �����  1. ���ͨ��  2. ���δͨ��
+	private Date sendDate;//�ϱ�ʱ��;
+	private int sendUser;//�ϱ���Աid;
+	private int flag;//�ļ�״̬: 0. δ�ϱ�  1. ���ϱ�
+	private Msg_manuscripts msgman;
+	private Org_employee orgem;
+
+	
+}

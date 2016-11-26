@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/news/!svn/ver/391/MessageSystem/WebRoot/WEB-INF/lib
+END
+gson-2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/gson-2.1.jar
+END
+commons-codec-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/commons-codec-1.5.jar
+END
+commons-fileupload-1.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar
+END
+poi-3.10-FINAL-20140208.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/poi-3.10-FINAL-20140208.jar
+END
+commons-lang3-3.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/commons-lang3-3.1.jar
+END
+jxl.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/news/!svn/ver/391/MessageSystem/WebRoot/WEB-INF/lib/jxl.jar
+END
+commons-io-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/commons-io-2.4.jar
+END
+mysql-connector-java-5.1.10-bin.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/news/!svn/ver/29/MessageSystem/WebRoot/WEB-INF/lib/mysql-connector-java-5.1.10-bin.jar
+END

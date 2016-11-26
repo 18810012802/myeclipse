@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/news/!svn/ver/551/MessageSystem/src/com/lib/service/t
+END
+File_attachService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/news/!svn/ver/447/MessageSystem/src/com/lib/service/t/File_attachService.java
+END
+Add_bookService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/news/!svn/ver/551/MessageSystem/src/com/lib/service/t/Add_bookService.java
+END
+Msg_ManuscriptsService.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/news/!svn/ver/186/MessageSystem/src/com/lib/service/t/Msg_ManuscriptsService.java
+END
+Msg_fileService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/news/!svn/ver/397/MessageSystem/src/com/lib/service/t/Msg_fileService.java
+END
+Msg_ReceiveService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/news/!svn/ver/172/MessageSystem/src/com/lib/service/t/Msg_ReceiveService.java
+END
+Org_employeeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/news/!svn/ver/316/MessageSystem/src/com/lib/service/t/Org_employeeService.java
+END

@@ -1,0 +1,59 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/ckeditor/_source/plugins/placeholder
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+dialogs
+dir
+
+lang
+dir
+
+placeholder.gif
+file
+
+
+
+
+2016-11-18T03:32:36.737604Z
+090274dbcc2f5a50ea1086d948ca85ab
+2016-11-14T02:16:11.932135Z
+5
+lichao
+has-props
+
+plugin.js
+file
+
+
+
+
+2016-11-18T03:32:36.737604Z
+7ee327e05b3195fc770fc2723bea1544
+2016-11-14T02:16:11.932135Z
+5
+lichao
+

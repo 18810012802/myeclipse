@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/news/!svn/ver/498/MessageSystem/WebRoot/assets/js/common
+END
+main.js
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/news/!svn/ver/497/MessageSystem/WebRoot/assets/js/common/main.js
+END
+main-min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/news/!svn/ver/5/MessageSystem/WebRoot/assets/js/common/main-min.js
+END
+search.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/news/!svn/ver/498/MessageSystem/WebRoot/assets/js/common/search.js
+END
+search-min.js
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/news/!svn/ver/5/MessageSystem/WebRoot/assets/js/common/search-min.js
+END
+page.js
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/news/!svn/ver/5/MessageSystem/WebRoot/assets/js/common/page.js
+END
+page-min.js
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/news/!svn/ver/5/MessageSystem/WebRoot/assets/js/common/page-min.js
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/news/!svn/ver/5/MessageSystem/WebRoot/assets/js/common/build.xml
+END

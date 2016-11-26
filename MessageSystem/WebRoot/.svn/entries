@@ -1,0 +1,142 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot
+https://lichao-pc/svn/news
+
+
+
+2016-11-23T06:20:57.797567Z
+571
+yetong
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+404.jsp
+file
+
+
+
+
+2016-11-23T07:22:58.619000Z
+cdc5efb2e368b42d9eb6e18b1ff008f3
+2016-11-22T07:23:54.059434Z
+516
+fancongcong
+
+500.jsp
+file
+
+
+
+
+2016-11-23T07:22:58.603000Z
+7e049cf8569b52a7373e1ff4e96c210e
+2016-11-22T07:24:20.429471Z
+517
+fancongcong
+
+AddressList
+dir
+
+Css
+dir
+
+Email
+dir
+
+Journal
+dir
+
+Js
+dir
+
+META-INF
+dir
+
+Manuscripts
+dir
+
+My97DatePicker
+dir
+
+MyFile
+dir
+
+MyManuscripts
+dir
+
+Resource
+dir
+
+Role
+dir
+
+Self
+dir
+
+User
+dir
+
+WEB-INF
+dir
+
+assets
+dir
+
+front
+dir
+
+images
+dir
+
+index.jsp
+file
+
+
+
+
+2016-11-21T07:10:56.017855Z
+4d6df849151a5223b553d3d62f9481b7
+2016-11-21T06:35:00.317416Z
+437
+fancongcong
+
+login.jsp
+file
+
+
+
+
+2016-11-23T07:22:58.635000Z
+e330900448defe54989c485757718440
+2016-11-22T07:40:12.174110Z
+522
+fancongcong
+
+null.jsp
+file
+
+
+
+
+2016-11-23T07:22:58.635000Z
+5ba68fecd465471af4d0d18bf3d729c5
+2016-11-22T07:24:31.399486Z
+518
+fancongcong
+

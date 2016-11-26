@@ -1,0 +1,64 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem
+https://lichao-pc/svn/news
+
+
+
+2016-11-23T06:44:56.634864Z
+572
+yetong
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+.classpath
+file
+
+
+
+
+2016-11-18T03:32:15.945206Z
+f7cfa02280fc8269677a34538260688c
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+.project
+file
+
+
+
+
+2016-11-18T03:32:15.945206Z
+3f9738b95bdcf30d5c3011c4b22dcb3c
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+.settings
+dir
+
+WebRoot
+dir
+
+build
+dir
+
+src
+dir
+

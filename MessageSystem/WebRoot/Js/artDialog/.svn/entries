@@ -1,0 +1,106 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/artDialog
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+artDialog.js
+file
+
+
+
+
+2016-11-18T03:33:00.718831Z
+96b775131928186a269e3c93ecd8608a
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+artDialog.source.js
+file
+
+
+
+
+2016-11-18T03:33:00.687572Z
+db4b85962f603c5f7cc938eebe6ce7ef
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+index.html
+file
+
+
+
+
+2016-11-18T03:33:00.787850Z
+dce1000b4c176c0f784c09f46096ad28
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+jquery.artDialog.js
+file
+
+
+
+
+2016-11-18T03:33:00.665441Z
+066880ba9452019e69159d44c16b2e65
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+jquery.artDialog.source.js
+file
+
+
+
+
+2016-11-18T03:33:00.988401Z
+9fb82c1ba68d570bbf6c3bbba3922527
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+license.txt
+file
+
+
+
+
+2016-11-18T03:33:00.687572Z
+ad68978264a8534f355b1fff51e3e092
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+plugins
+dir
+
+skins
+dir
+

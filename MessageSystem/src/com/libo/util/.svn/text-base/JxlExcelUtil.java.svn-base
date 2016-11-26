@@ -1,0 +1,149 @@
+package com.libo.util;
+
+import java.io.File;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.write.Label;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+
+//import com.jikexueyuan.bean.Book;
+public class JxlExcelUtil {
+	/**
+	 * 带表头信息导出到excel
+	 * 
+	 * @param ar
+	 *            各种数据容器
+	 * @param str
+	 *            导出路径
+	 * @param titles
+	 *            表头信息
+	 * @return
+	 */
+	public static String excleOutWithTitle(List ar, String str,
+			Map<String, String> titles) {
+		WritableWorkbook book = null;
+		try {
+			book = Workbook.createWorkbook(new File(str));
+			WritableSheet sheet = book.createSheet("sheet", 0);
+			int count = 0;
+			for (Iterator it = titles.keySet().iterator(); it.hasNext();) {
+				String key = it.next().toString();
+				Label la = new Label(count, 0, titles.get(key));
+				sheet.addCell(la);
+				count++;
+			}
+
+			for (int i = 0; i < ar.size(); i++) {
+				Object ob = ar.get(i);
+				Class cl = ob.getClass();
+				Field[] fi = cl.getDeclaredFields();
+				int co = 0;
+				for (int j = 0; j < fi.length; j++) {
+					fi[j].setAccessible(true);
+					String title = fi[j].getName();
+					if (titles.containsKey(title)) {
+						Label la = new Label(co, i + 1, String.valueOf(fi[j]
+								.get(ob)));
+						sheet.addCell(la);
+						co++;
+					}
+
+				}
+			}
+			book.write();
+		} catch (Exception e) {
+			// e.printStackTrace();
+			return "导出失败！";
+		} finally {
+			try {
+				book.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return "导出成功，文件路径：" + str;
+	}
+
+	/**
+	 * 不带表头通用导出Excel，List可以存放任意类型，不必是同一种类
+	 * 
+	 * @param ar
+	 * @param str
+	 * @return
+	 */
+	public static String excleOut(List ar, String str) {
+		WritableWorkbook book = null;
+		try {
+			book = Workbook.createWorkbook(new File(str));
+			WritableSheet sheet = book.createSheet("sheet", 0);
+			for (int i = 0; i < ar.size(); i++) {
+				Object ob = ar.get(i);
+				Class cl = ob.getClass();
+				Field[] fi = cl.getDeclaredFields();
+				for (int j = 0; j < fi.length; j++) {
+					fi[j].setAccessible(true);
+					Label la = new Label(j, i, String.valueOf(fi[j].get(ob)));
+					sheet.addCell(la);
+				}
+			}
+			book.write();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return "导出失败！";
+		} finally {
+			try {
+				book.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return "导出成功，文件路径：" + str;
+	}
+
+	/**
+	 * 通用导入excel
+	 * 
+	 * @param cl
+	 * @param str
+	 * @return
+	 */
+	public static List excleIn(Class cl, String str) {
+		List ar = new ArrayList();
+		Workbook book = null;
+		try {
+			book = Workbook.getWorkbook(new File(str));
+			Sheet sheet = book.getSheet(0);
+			Field[] fi = cl.getDeclaredFields();
+			for (int i = 0; i < sheet.getRows(); i++) {
+				Object ob = cl.newInstance();
+				for (int j = 0; j < fi.length; j++) {
+					fi[j].setAccessible(true);
+					String con = sheet.getCell(j, i).getContents();
+					if (fi[j].getType().toString()
+							.equals("class java.lang.String")) {
+						fi[j].set(ob, con);
+					} else if (fi[j].getType().toString().equals("int")) {
+						fi[j].setInt(ob, Integer.valueOf(con));
+					} else if (fi[j].getType().toString()
+							.equals("class java.lang.Integer")) {
+						fi[j].setInt(ob, Integer.valueOf(con));
+					}
+				}
+				ar.add(ob);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			book.close();
+		}
+		return ar;
+	}
+
+}

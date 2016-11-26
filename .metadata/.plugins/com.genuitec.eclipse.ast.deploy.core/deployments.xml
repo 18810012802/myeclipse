@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<deployments>
+  <deployment alt-context-root="" context-root="/EasyUI" deployment-path="D:/myeclipse/.metadata/.me_tcat7/webapps/EasyUI" project-name="EasyUI" server-id="myeclipseTomcatServer7" state="DEPLOYED" type="WEB"/>
+  <deployment context-root="/TrainSys" deployment-path="D:/理博软件/apache-tomcat-6.0.44/webapps/TrainSys" project-name="TrainSys" server-id="tomcat6Server" state="DEPLOYED" type="WEB"/>
+</deployments>

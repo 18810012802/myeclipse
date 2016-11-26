@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MessageSystem</display-name>  
+  	<resource-ref>
+		<res-ref-name>inforsys</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+  <servlet>
+    <servlet-name>LoginServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.LoginServlet_fan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <servlet-class>com.libo.servlet.fan.LoginOutServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectAll_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.SelectAll_fan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteEmailByIdServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.DeleteEmailByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExcelReceiveEmailServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.ExcelReceiveEmailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ExcelSendEmailServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.ExcelSendEmailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReSendServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.ReSendServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SendEmailServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.SendEmailServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowEmailInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.ShowEmailInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowEmailsByLikeServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.ShowEmailsByLikeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowReceiveEmailsServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.ShowReceiveEmailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>IssueServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.IssueServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.ShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.DelInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.SelectInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BasicInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.BasicInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PassWordServlet</servlet-name>
+    <servlet-class>com.libo.servlet.yetong.PassWordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>loginServlet_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.loginServlet_mc</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>selectServlet_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.selectServlet_mc</servlet-class>
+  </servlet>
+ <servlet>
+    <servlet-name>MyFileMesServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.MyFileMesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LookFileServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.LookFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FilelistServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.FilelistServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>Filelist2Servlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.Filelist2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddFileServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.AddFileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ReceiveServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.ReceiveServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdaMsgFileServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.UpdaMsgFileServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Org_employeeServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.Org_employeeServlet_fan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Org_EmployeeServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.Org_EmployeeServlet_fan</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>menuServlet_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.menuServlet_mc</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>DelMsgFileServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.DelMsgFileServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>UpdateInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.UpdateInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryInfoByLike</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.QueryInfoByLike</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyFileMesTwoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.MyFileMesTwoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LookMyFileMesTwoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.LookMyFileMesTwoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>menuServlet1_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.menuServlet1_mc</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>editServlet_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.editServlet_mc</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>editDelet</servlet-name>
+    <servlet-class>com.libo.servlet.mc.editDelet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addServlet</servlet-name>
+    <servlet-class>com.libo.servlet.mc.addServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>addServlet_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.addServlet_mc</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet>
+    <servlet-name>DeleteOrg_EmployeeServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.DeleteOrg_EmployeeServlet_fan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateOrg_EmployeeServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.UpdateOrg_EmployeeServlet_fan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectRoleServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.SelectRoleServlet_fan</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteRoleServlet_fan</servlet-name>
+    <servlet-class>com.libo.servlet.fan.DeleteRoleServlet_fan</servlet-class>
+  </servlet>
+
+  
+  <servlet>
+    <servlet-name>MyFileMsgServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.MyFileMsgServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>IssueExportExcelServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.IssueExportExcelServlet</servlet-class>
+  </servlet>
+
+
+<servlet>
+    <servlet-name>PublishServlet</servlet-name>
+    <servlet-class>com.lib.servlet.publish.PublishServlet</servlet-class>
+</servlet>
+
+  <servlet>
+    <servlet-name>MyFileMsgLookServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.MyFileMsgLookServlet</servlet-class>
+  </servlet>
+
+
+  <servlet>
+    <servlet-name>QueryInfoServilet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.QueryInfoServilet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelInfosServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.DelInfosServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deletServlet_mc</servlet-name>
+    <servlet-class>com.libo.servlet.mc.deletServlet_mc</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>AddInfoJspServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.AddInfoJspServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>TyExportExcelServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.TyExportExcelServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>MyFileUpServlet</servlet-name>
+    <servlet-class>com.libo.servlet.t.MyFileUpServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>QueryWaitInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.QueryWaitInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectWaitInfoServlet</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.SelectWaitInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckWaitInfo</servlet-name>
+    <servlet-class>com.libo.servlet.lichao.CheckWaitInfo</servlet-class>
+  </servlet>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet_fan</servlet-name>
+    <url-pattern>/LoginServlet_fan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOutServlet</servlet-name>
+    <url-pattern>/LoginOutServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectAll_fan</servlet-name>
+    <url-pattern>/SelectAll_fan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteEmailByIdServlet</servlet-name>
+    <url-pattern>/DeleteEmailByIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExcelReceiveEmailServlet</servlet-name>
+    <url-pattern>/ExcelReceiveEmailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ExcelSendEmailServlet</servlet-name>
+    <url-pattern>/ExcelSendEmailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReSendServlet</servlet-name>
+    <url-pattern>/ReSendServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SendEmailServlet</servlet-name>
+    <url-pattern>/SendEmailServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowEmailInfoServlet</servlet-name>
+    <url-pattern>/ShowEmailInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowEmailsByLikeServlet</servlet-name>
+    <url-pattern>/ShowEmailsByLikeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowReceiveEmailsServlet</servlet-name>
+    <url-pattern>/ShowReceiveEmailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IssueServlet</servlet-name>
+    <url-pattern>/IssueServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowServlet</servlet-name>
+    <url-pattern>/ShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelInfoServlet</servlet-name>
+    <url-pattern>/DelInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectInfoServlet</servlet-name>
+    <url-pattern>/SelectInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BasicInfoServlet</servlet-name>
+    <url-pattern>/BasicInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PassWordServlet</servlet-name>
+    <url-pattern>/PassWordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginServlet_mc</servlet-name>
+    <url-pattern>/loginServlet_mc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>selectServlet_mc</servlet-name>
+    <url-pattern>/selectServlet_mc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyFileMesServlet</servlet-name>
+    <url-pattern>/MyFileMesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LookFileServlet</servlet-name>
+    <url-pattern>/LookFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FilelistServlet</servlet-name>
+    <url-pattern>/FilelistServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Filelist2Servlet</servlet-name>
+    <url-pattern>/Filelist2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFileServlet</servlet-name>
+    <url-pattern>/AddFileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ReceiveServlet</servlet-name>
+    <url-pattern>/ReceiveServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdaMsgFileServlet</servlet-name>
+    <url-pattern>/UpdaMsgFileServlet</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>Org_employeeServlet_fan</servlet-name>
+    <url-pattern>/Org_employeeServlet_fan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Org_EmployeeServlet_fan</servlet-name>
+    <url-pattern>/Org_EmployeeServlet_fan</url-pattern>
+  </servlet-mapping>
+
+
+
+  <servlet-mapping>
+    <servlet-name>menuServlet_mc</servlet-name>
+    <url-pattern>/menuServlet_mc</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>DelMsgFileServlet</servlet-name>
+    <url-pattern>/DelMsgFileServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>UpdateInfoServlet</servlet-name>
+    <url-pattern>/UpdateInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryInfoByLike</servlet-name>
+    <url-pattern>/QueryInfoByLike</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet-mapping>
+    <servlet-name>MyFileMesTwoServlet</servlet-name>
+    <url-pattern>/MyFileMesTwoServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>LookMyFileMesTwoServlet</servlet-name>
+    <url-pattern>/LookMyFileMesTwoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>menuServlet1_mc</servlet-name>
+    <url-pattern>/menuServlet1_mc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>editServlet_mc</servlet-name>
+    <url-pattern>/editServlet_mc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>editDelet</servlet-name>
+    <url-pattern>/editDelet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addServlet</servlet-name>
+    <url-pattern>/addServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>addServlet_mc</servlet-name>
+    <url-pattern>/addServlet_mc</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteOrg_EmployeeServlet_fan</servlet-name>
+    <url-pattern>/DeleteOrg_EmployeeServlet_fan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateOrg_EmployeeServlet_fan</servlet-name>
+    <url-pattern>/UpdateOrg_EmployeeServlet_fan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectRoleServlet_fan</servlet-name>
+    <url-pattern>/SelectRoleServlet_fan</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteRoleServlet_fan</servlet-name>
+    <url-pattern>/DeleteRoleServlet_fan</url-pattern>
+  </servlet-mapping>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>MyFileMsgServlet</servlet-name>
+    <url-pattern>/MyFileMsgServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>IssueExportExcelServlet</servlet-name>
+    <url-pattern>/IssueExportExcelServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  
+    <servlet-name>PublishServlet</servlet-name>
+    <url-pattern>/PublishServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyFileMsgLookServlet</servlet-name>
+    <url-pattern>/MyFileMsgLookServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>QueryInfoServilet</servlet-name>
+    <url-pattern>/QueryInfoServilet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelInfosServlet</servlet-name>
+    <url-pattern>/DelInfosServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deletServlet_mc</servlet-name>
+    <url-pattern>/deletServlet_mc</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>AddInfoJspServlet</servlet-name>
+    <url-pattern>/AddInfoJspServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>TyExportExcelServlet</servlet-name>
+    <url-pattern>/TyExportExcelServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>MyFileUpServlet</servlet-name>
+    <url-pattern>/MyFileUpServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>QueryWaitInfoServlet</servlet-name>
+    <url-pattern>/QueryWaitInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectWaitInfoServlet</servlet-name>
+    <url-pattern>/SelectWaitInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckWaitInfo</servlet-name>
+    <url-pattern>/CheckWaitInfo</url-pattern>
+  </servlet-mapping>
+  
+
+
+
+
+
+
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>  
+  </welcome-file-list>
+</web-app>

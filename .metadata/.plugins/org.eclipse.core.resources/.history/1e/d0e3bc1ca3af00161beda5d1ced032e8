@@ -1,0 +1,7 @@
+package com.mql.service;
+
+import com.mql.dao.BaseDao;
+
+public class Query extends BaseDao{
+	
+}

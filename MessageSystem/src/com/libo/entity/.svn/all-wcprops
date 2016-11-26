@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/news/!svn/ver/536/MessageSystem/src/com/libo/entity
+END
+Sys_menu.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/news/!svn/ver/97/MessageSystem/src/com/libo/entity/Sys_menu.java
+END
+Msg_manuscripts.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/news/!svn/ver/495/MessageSystem/src/com/libo/entity/Msg_manuscripts.java
+END
+File_attach.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/news/!svn/ver/31/MessageSystem/src/com/libo/entity/File_attach.java
+END
+Mail_box.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/508/MessageSystem/src/com/libo/entity/Mail_box.java
+END
+Msg_receive.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/news/!svn/ver/106/MessageSystem/src/com/libo/entity/Msg_receive.java
+END
+Attach.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/news/!svn/ver/509/MessageSystem/src/com/libo/entity/Attach.java
+END
+Msg_file_list.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/news/!svn/ver/512/MessageSystem/src/com/libo/entity/Msg_file_list.java
+END
+Org_employee.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/news/!svn/ver/350/MessageSystem/src/com/libo/entity/Org_employee.java
+END
+Box.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/news/!svn/ver/509/MessageSystem/src/com/libo/entity/Box.java
+END
+PublishDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/news/!svn/ver/573/MessageSystem/src/com/libo/entity/PublishDetail.java
+END
+Employee.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/509/MessageSystem/src/com/libo/entity/Employee.java
+END
+Msg_file.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/429/MessageSystem/src/com/libo/entity/Msg_file.java
+END
+Add_book.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/536/MessageSystem/src/com/libo/entity/Add_book.java
+END
+Org_role.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/284/MessageSystem/src/com/libo/entity/Org_role.java
+END

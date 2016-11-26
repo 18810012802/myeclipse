@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/news/!svn/ver/446/MessageSystem/src/com/libo/service/impl/t
+END
+Msg_ManuscriptsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/news/!svn/ver/187/MessageSystem/src/com/libo/service/impl/t/Msg_ManuscriptsServiceImpl.java
+END
+File_attachServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/news/!svn/ver/446/MessageSystem/src/com/libo/service/impl/t/File_attachServiceImpl.java
+END
+Msg_fileServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/news/!svn/ver/398/MessageSystem/src/com/libo/service/impl/t/Msg_fileServiceImpl.java
+END
+Org_employeeServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/news/!svn/ver/320/MessageSystem/src/com/libo/service/impl/t/Org_employeeServiceImpl.java
+END
+Msg_ReceiveServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/news/!svn/ver/173/MessageSystem/src/com/libo/service/impl/t/Msg_ReceiveServiceImpl.java
+END

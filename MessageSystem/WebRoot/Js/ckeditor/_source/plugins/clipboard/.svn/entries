@@ -1,0 +1,56 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/ckeditor/_source/plugins/clipboard
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+dialogs
+dir
+
+plugin.js
+file
+
+
+
+
+2016-11-18T03:32:37.453893Z
+43ee65e0dd88eb99e17b09b51fd56531
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+vssver2.scc
+file
+
+
+
+
+2016-11-18T03:32:37.438270Z
+8da20ff037a67b126223d27096166593
+2016-11-14T02:16:11.932135Z
+5
+lichao
+has-props
+

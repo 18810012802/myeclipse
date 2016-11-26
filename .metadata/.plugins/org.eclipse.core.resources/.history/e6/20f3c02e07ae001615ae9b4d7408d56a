@@ -1,0 +1,11 @@
+package com.lib.service.publish;
+
+import java.util.List;
+import java.util.Map;
+
+import com.libo.entity.Msg_manuscripts;
+
+public interface PublishService {
+	public List<Msg_manuscripts> queryManuscripts(int page,int pageSize,Map<String,String> condition);
+	public int[] queryManuscriptsCount(int pageSize,Map<String,String> condition);
+}

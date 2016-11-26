@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/news/!svn/ver/408/MessageSystem/src/com/libo/service/impl/mc
+END
+menuByidServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/news/!svn/ver/408/MessageSystem/src/com/libo/service/impl/mc/menuByidServiceImpl.java
+END
+menuServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/news/!svn/ver/310/MessageSystem/src/com/libo/service/impl/mc/menuServiceImpl.java
+END
+editServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/news/!svn/ver/310/MessageSystem/src/com/libo/service/impl/mc/editServiceImpl.java
+END
+loginServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/news/!svn/ver/147/MessageSystem/src/com/libo/service/impl/mc/loginServiceImpl.java
+END
+addServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/news/!svn/ver/310/MessageSystem/src/com/libo/service/impl/mc/addServiceImpl.java
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/news/!svn/ver/484/MessageSystem/src/com/libo/dao/mc
+END
+menuDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/news/!svn/ver/311/MessageSystem/src/com/libo/dao/mc/menuDao.java
+END
+editDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/news/!svn/ver/311/MessageSystem/src/com/libo/dao/mc/editDao.java
+END
+loginDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/484/MessageSystem/src/com/libo/dao/mc/loginDao.java
+END
+addDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/news/!svn/ver/311/MessageSystem/src/com/libo/dao/mc/addDao.java
+END
+menuByid.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/news/!svn/ver/409/MessageSystem/src/com/libo/dao/mc/menuByid.java
+END

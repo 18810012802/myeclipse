@@ -1,0 +1,75 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/ckeditor/plugins/uicolor
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+dialogs
+dir
+
+lang
+dir
+
+plugin.js
+file
+
+
+
+
+2016-11-18T03:32:25.562179Z
+eca93b96c1aab97e0dc5d4ab830c61f0
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+uicolor.gif
+file
+
+
+
+
+2016-11-18T03:32:25.562179Z
+83be344f9d97ac22ccfb90a07d128b04
+2016-11-14T02:16:11.932135Z
+5
+lichao
+has-props
+
+vssver2.scc
+file
+
+
+
+
+2016-11-18T03:32:25.562179Z
+714b5aa4cf9409ac0be5a73c0ec4a1e5
+2016-11-14T02:16:11.932135Z
+5
+lichao
+has-props
+
+yui
+dir
+

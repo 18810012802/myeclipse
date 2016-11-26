@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/news/!svn/ver/572/MessageSystem/src/com/libo/servlet/yetong
+END
+BasicInfoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/news/!svn/ver/341/MessageSystem/src/com/libo/servlet/yetong/BasicInfoServlet.java
+END
+SendEmailServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/news/!svn/ver/572/MessageSystem/src/com/libo/servlet/yetong/SendEmailServlet.java
+END
+ShowEmailInfoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/news/!svn/ver/544/MessageSystem/src/com/libo/servlet/yetong/ShowEmailInfoServlet.java
+END
+PassWordServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/news/!svn/ver/506/MessageSystem/src/com/libo/servlet/yetong/PassWordServlet.java
+END
+ShowReceiveInfoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/news/!svn/ver/562/MessageSystem/src/com/libo/servlet/yetong/ShowReceiveInfoServlet.java
+END
+ExcelReceiveEmailServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/news/!svn/ver/77/MessageSystem/src/com/libo/servlet/yetong/ExcelReceiveEmailServlet.java
+END
+ShowReceiveEmailsServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/news/!svn/ver/508/MessageSystem/src/com/libo/servlet/yetong/ShowReceiveEmailsServlet.java
+END
+ShowEmailsByLikeServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/news/!svn/ver/508/MessageSystem/src/com/libo/servlet/yetong/ShowEmailsByLikeServlet.java
+END
+ExcelSendEmailServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/news/!svn/ver/77/MessageSystem/src/com/libo/servlet/yetong/ExcelSendEmailServlet.java
+END
+DeleteEmailByIdServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/news/!svn/ver/562/MessageSystem/src/com/libo/servlet/yetong/DeleteEmailByIdServlet.java
+END
+ReSendServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/news/!svn/ver/558/MessageSystem/src/com/libo/servlet/yetong/ReSendServlet.java
+END

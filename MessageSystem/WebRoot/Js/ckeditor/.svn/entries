@@ -1,0 +1,245 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/ckeditor
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+.htaccess
+file
+
+
+
+
+2016-11-18T03:32:58.128953Z
+231a88e9b3a91190b6a572d9d29a2b3e
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+CHANGES.html
+file
+
+
+
+
+2016-11-18T03:32:58.128953Z
+fdfd60ce646b16a7548300ac6e6a030f
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+INSTALL.html
+file
+
+
+
+
+2016-11-18T03:32:58.082071Z
+42825ba841772a3eca0bb7a54279e3b1
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+LICENSE.html
+file
+
+
+
+
+2016-11-18T03:32:57.981806Z
+6fb53b1d8b8f975cb720729239a3dc5f
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+_samples
+dir
+
+_source
+dir
+
+adapters
+dir
+
+ckeditor.asp
+file
+
+
+
+
+2016-11-18T03:32:58.028688Z
+e2568b8f83a197a778891b458c98d9ee
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor.js
+file
+
+
+
+
+2016-11-18T03:32:57.897167Z
+fd861589011793159b1788c092b8e5c1
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor.pack
+file
+
+
+
+
+2016-11-18T03:32:57.944044Z
+1ba3402d8e968960ada069c02448e41b
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor.php
+file
+
+
+
+
+2016-11-18T03:32:58.059939Z
+91794e67ba6a31f857ba474a2c34d7f2
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor_basic.js
+file
+
+
+
+
+2016-11-18T03:32:57.944044Z
+fb3b4d798bc8312401d82b212e7e1334
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor_basic_source.js
+file
+
+
+
+
+2016-11-18T03:32:58.082071Z
+db8641b1ae9a51e1f344969dbd5a996d
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor_php4.php
+file
+
+
+
+
+2016-11-18T03:32:58.013059Z
+fdb8b4284a9a20b155b3da16136fe349
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor_php5.php
+file
+
+
+
+
+2016-11-18T03:32:58.059939Z
+2d3cb5340169153e26057702e70d8e26
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+ckeditor_source.js
+file
+
+
+
+
+2016-11-18T03:32:58.082071Z
+ded377071914122a6074a175e7902a83
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+config.js
+file
+
+
+
+
+2016-11-18T03:32:57.897167Z
+59000bb467f6d6d155ff97148012b375
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+contents.css
+file
+
+
+
+
+2016-11-18T03:32:57.959667Z
+e7e2cd0170d10e61dfcf34b33ca60e14
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+images
+dir
+
+lang
+dir
+
+plugins
+dir
+
+skins
+dir
+
+themes
+dir
+
+vssver2.scc
+file
+
+
+
+
+2016-11-18T03:32:57.944044Z
+0b30452abd47287753ae7d482e87c8f5
+2016-11-14T02:16:11.932135Z
+5
+lichao
+has-props
+

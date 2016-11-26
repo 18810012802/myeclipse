@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/news/!svn/ver/566/MessageSystem/src/com/libo/servlet/wang
+END
+CheckinfoServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/news/!svn/ver/537/MessageSystem/src/com/libo/servlet/wang/CheckinfoServlet.java
+END
+innerServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/news/!svn/ver/537/MessageSystem/src/com/libo/servlet/wang/innerServlet.java
+END
+UpdateBookServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/news/!svn/ver/566/MessageSystem/src/com/libo/servlet/wang/UpdateBookServlet.java
+END
+indexServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/news/!svn/ver/553/MessageSystem/src/com/libo/servlet/wang/indexServlet.java
+END
+AddbookServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/news/!svn/ver/537/MessageSystem/src/com/libo/servlet/wang/AddbookServlet.java
+END
+SelectServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/news/!svn/ver/556/MessageSystem/src/com/libo/servlet/wang/SelectServlet.java
+END
+DeleteBookServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/news/!svn/ver/565/MessageSystem/src/com/libo/servlet/wang/DeleteBookServlet.java
+END

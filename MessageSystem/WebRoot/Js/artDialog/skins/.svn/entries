@@ -1,0 +1,172 @@
+8
+
+dir
+572
+https://lichao-pc/svn/news/MessageSystem/WebRoot/Js/artDialog/skins
+https://lichao-pc/svn/news
+
+
+
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4cb17615-6ff3-044a-8f2a-67551c71f1bf
+
+aero
+dir
+
+aero.css
+file
+
+
+
+
+2016-11-18T03:33:00.487033Z
+ffb24ffafdaed4cb0d77218a2169cb8c
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+black
+dir
+
+black.css
+file
+
+
+
+
+2016-11-18T03:33:00.487033Z
+f261bf2ccc44af55e65a12c3eda3d53e
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+blue
+dir
+
+blue.css
+file
+
+
+
+
+2016-11-18T03:33:00.487033Z
+054fb22cd957ae6968edaecbaf698a12
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+chrome
+dir
+
+chrome.css
+file
+
+
+
+
+2016-11-18T03:33:00.487033Z
+f2a175510f681ab5c28ece895a44df5b
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+default.css
+file
+
+
+
+
+2016-11-18T03:33:00.487033Z
+e1967d793364d45309c9196df7f8ba6f
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+green
+dir
+
+green.css
+file
+
+
+
+
+2016-11-18T03:33:00.465155Z
+1166cb9031fa7a780b629ba7c95ce734
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+icons
+dir
+
+idialog
+dir
+
+idialog.css
+file
+
+
+
+
+2016-11-18T03:33:00.483787Z
+1155e42520b0ff49a450e2a71013b2de
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+opera
+dir
+
+opera.css
+file
+
+
+
+
+2016-11-18T03:33:00.465155Z
+9753ed06aaf2a3d48f60beb3bd45b00c
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+simple.css
+file
+
+
+
+
+2016-11-18T03:33:00.465155Z
+23414e4767fc102e17bbc5112602554e
+2016-11-14T02:16:11.932135Z
+5
+lichao
+
+twitter.css
+file
+
+
+
+
+2016-11-18T03:33:00.465155Z
+78f6ddd7e1bcf60b7deb15cb478fd090
+2016-11-14T02:16:11.932135Z
+5
+lichao
+

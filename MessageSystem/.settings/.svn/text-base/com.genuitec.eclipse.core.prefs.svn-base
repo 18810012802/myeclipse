@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/Js/artDialog/jquery.artDialog.js,WebRoot/assets/js/prettify.js,WebRoot/assets/js/bui.js,WebRoot/Js/formValidatorRegex.js,WebRoot/Js/artDialog/artDialog.js
+validator.Unchecked=
