@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 import com.libo.dao.TrainDao;
@@ -30,7 +31,14 @@ public class TrainServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setCharacterEncoding("utf-8");
 		String t = request.getParameter("t");
-		if ("look".equals(t)) {
+		if("type".equals(t)){
+			TrainDao ps = new TrainDao();
+			JSONArray ja = ps.getTrainTypes();
+			response.setContentType("text/json;charset=utf-8");
+			PrintWriter pw = response.getWriter();
+			pw.write(ja.toString());
+			pw.close();
+		}else if ("look".equals(t)) {
 			TrainDao ps = new TrainDao();
 			String no=request.getParameter("train_no");
 			response.setContentType("text/html;charset=utf-8");
@@ -116,8 +124,9 @@ public class TrainServlet extends HttpServlet {
 			String sort = request.getParameter("sort");
 			String order = request.getParameter("order");
 			String train_no = request.getParameter("train_no");
+			String trainType = request.getParameter("trainType");
 			Map<String, Object> map = ps.getAllTrain(sort, order, page,
-					pageSize, train_no);
+					pageSize, train_no,trainType);
 			JSONObject jo = JSONObject.fromObject(map);
 			response.setContentType("text/json;charset=utf-8");
 			PrintWriter pw = response.getWriter();

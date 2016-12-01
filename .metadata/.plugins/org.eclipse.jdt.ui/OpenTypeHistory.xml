@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=Hiber2/src&lt;com.libo.service{UsersService.java[UsersService" modifiers="513" timestamp="1480490980695"/>
+<typeInfo handle="=Hiber2/src&lt;com.libo.dao{HouseDao.java[HouseDao" modifiers="513" timestamp="1480485345172"/>
+<typeInfo handle="=Hiber2/src&lt;com.libo.service{HouseService.java[HouseService" modifiers="513" timestamp="1480490073528"/>
+<typeInfo handle="=Hiber2/D:\/Users\/Administrator\/MyEclipse Professional\/plugins\/com.genuitec.eclipse.j2eedt.core_11.0.0.me201303222027\/data\/libraryset\/EE_6\/javax.servlet.jar&lt;javax.servlet(Filter.class[Filter" modifiers="1537" timestamp="1363957922000"/>
+<typeInfo handle="=Hiber2/D:\/Users\/Administrator\/MyEclipse Professional\/binary\/com.sun.java.jdk.win32.x86_64_1.6.0.u43\/jre\/lib\/rt.jar&lt;java.util.logging(Filter.class[Filter" modifiers="1537" timestamp="1362478270000"/>
+<typeInfo handle="=Hiber2/src&lt;com.libo.dao{DistrictDao.java[DistrictDao" modifiers="513" timestamp="1480488543519"/>
+<typeInfo handle="=Hiber2/D:\/Users\/Administrator\/MyEclipse Professional\/plugins\/com.genuitec.eclipse.j2eedt.core_11.0.0.me201303222027\/data\/libraryset\/EE_6\/javax.resource.jar&lt;javax.resource.spi.work(DistributableWork.class[DistributableWork" modifiers="1537" timestamp="1363957922000"/>
+</typeInfoHistroy>

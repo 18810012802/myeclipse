@@ -1,8 +1,0 @@
-package com.libo.util;
-
-public class FileLoadUtil {
-	public String DownloadFile(String path){
-		
-		return "操作成功！";
-	}
-}

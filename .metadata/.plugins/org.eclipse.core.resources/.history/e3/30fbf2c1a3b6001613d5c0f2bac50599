@@ -1,0 +1,33 @@
+$(function(){
+	$.ajax({
+		type : 'POST',
+		url : 'SearchHouseServlet',
+		data : {
+			type : 'street',
+			name : name
+			
+		},
+		success : function(msg) {
+			for(var i=0;i<msg.length;i++){
+				var ms=pro[i];
+				$("#street").append("<option value="+ms.id+">"+ms.name+"</option>);");
+			}
+		}
+	});
+	$.ajax({
+		type : 'POST',
+		url : 'SearchHouseServlet',
+		data : {
+			type : 'types',
+			name : name
+			
+		},
+		success : function(msg) {
+			for(var i=0;i<msg.length;i++){
+				var ms=pro[i];
+				$("#street").append("<option value="+ms.id+">"+ms.name+"</option>);");
+			}
+		}
+
+	});
+});

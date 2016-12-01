@@ -1,9 +1,0 @@
-package com.libo.util;
-
-import java.util.List;
-
-public class JxlExcelUtil {
-	public void exportJxl(List list){
-		
-	}
-}

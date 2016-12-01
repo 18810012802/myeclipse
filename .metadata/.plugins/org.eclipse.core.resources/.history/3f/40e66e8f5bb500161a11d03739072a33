@@ -1,0 +1,5 @@
+package com.libo.service;
+
+public class UsersServiceImpl implements UsersService {
+
+}

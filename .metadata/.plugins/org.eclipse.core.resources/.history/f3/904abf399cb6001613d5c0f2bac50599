@@ -1,0 +1,5 @@
+package com.libo.dao;
+
+public interface TypesDao {
+	public List<Types> queryAll();
+}

@@ -10,9 +10,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 
 import com.mql.dao.Query;
+import com.mql.dao.TreeListDao;
 import com.mql.domain.User;
 
 public class PublishServlet extends HttpServlet {
@@ -31,8 +33,20 @@ public class PublishServlet extends HttpServlet {
 		response.setCharacterEncoding("utf-8");
 		// response.setContentType("text/html;charset=utf-8");
 		String type = request.getParameter("type");
-
-		if ("del".equals(type)) {
+		String state=request.getParameter("state");
+		if("tree".equals(type)){
+			String id=request.getParameter("id");
+			if(id==null){
+				id="0";
+			}
+			TreeListDao tld=new TreeListDao();
+			response.setContentType("text/json;charset=utf-8");
+			PrintWriter pw = response.getWriter();
+			JSONArray ja=tld.query(Integer.parseInt(id));
+			pw.write(ja.toString());
+			pw.close();
+			
+		}else if ("del".equals(type)) {
 			Query ps = new Query();
 			int result = 0;
 			response.setContentType("text/html;charset=utf-8");

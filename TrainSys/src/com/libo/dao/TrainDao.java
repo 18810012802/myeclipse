@@ -7,9 +7,36 @@ import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
 import com.libo.entity.TrainInfo;
+import com.libo.entity.TrainType;
 
 public class TrainDao extends BaseDao {
+	public JSONArray getTrainTypes() {
+		JSONArray ja = new JSONArray();
+		try {
+			String sql = "select * from traintype ";
+			getConnection();
+			pst = conn.prepareStatement(sql);
+			rs = pst.executeQuery();
+			while (rs.next()) {
+				TrainType tt = new TrainType();
+				tt.setId(rs.getInt(1));
+				tt.setType(rs.getString(2));
+				tt.setGroup(rs.getString(3));
+				ja.add(tt);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		} finally {
+			close();
+		}
+		return ja;
+	}
+
 	/**
 	 * 获取列车信息列表
 	 * 
@@ -21,7 +48,7 @@ public class TrainDao extends BaseDao {
 	 * @return
 	 */
 	public Map<String, Object> getAllTrain(String sort, String order, int page,
-			int pageSize, String train_no) {
+			int pageSize, String train_no,String type) {
 		// TODO Auto-generated method stub
 		Map<String, Object> map = new HashMap<String, Object>();
 		List<TrainInfo> list = new ArrayList<TrainInfo>();
@@ -32,10 +59,14 @@ public class TrainDao extends BaseDao {
 					&& !"null".equals(train_no)) {
 				sql += " where train_no like '%" + train_no + "%'";
 			}
+			if (type != null && !"".equals(type)
+					&& !"null".equals(type)) {
+				sql += " where type = '" + type + "'";
+			}
 			sql += "order by " + sort + " " + order + " limit ?,?";
 			getConnection();
 			int first = pageSize * (page - 1);
-			int total = getTotal(train_no);
+			int total = getTotal(train_no,type);
 			map.put("total", total);
 			pst = conn.prepareStatement(sql);
 			pst.setInt(1, first);
@@ -74,11 +105,14 @@ public class TrainDao extends BaseDao {
 	 * @param u
 	 * @return
 	 */
-	public int getTotal(String u) {
+	public int getTotal(String u,String t) {
 		int total = 0;
-		String sql = "select count(*) from train_info";
+		String sql = "select count(*) from train_info where 1=1";
 		if (u != null && !"".equals(u) && !"null".equals(u)) {
-			sql += " where train_no like '%" + u + "%'";
+			sql += " and train_no like '%" + u + "%'";
+		}
+		if (t != null && !"".equals(t) && !"null".equals(t)) {
+			sql += " and type = '" + t + "'";
 		}
 		try {
 			pst = conn.prepareStatement(sql);
@@ -165,8 +199,8 @@ public class TrainDao extends BaseDao {
 	 */
 	public int update(TrainInfo ti) {
 		int rows = 0;
+		getConnection();
 		if (getTotalByTrainNo(ti.getTrain_no()) == 0) {
-			getConnection();
 			String sql = "update train_info set start_station=?,arrival_station=?,start_time=?,arrival_time=?,type=?,runtime=?,mile=?, train_no=? where no=?";
 			try {
 				pst = conn.prepareStatement(sql);

@@ -9,6 +9,9 @@ public class TrainInfo {
 	private String type;
 	private String runtime;
 	private String no;
+	public String toString(){
+		return no+","+runtime+","+train_no+","+start_station+","+arrival_station+","+start_time+","+arrival_time+","+type;
+	}
 	public String getTrain_no() {
 		return train_no;
 	}

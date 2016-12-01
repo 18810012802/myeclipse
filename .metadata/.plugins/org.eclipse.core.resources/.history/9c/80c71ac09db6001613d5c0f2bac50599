@@ -1,0 +1,54 @@
+package com.libo.dao;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+
+import com.libo.po.House;
+import com.libo.util.HibernateUtil;
+
+public class HouseDaoImpl implements HouseDao {
+	public List<House> query(House house,int page){
+		  // 3.绑定参数的第三种方法：
+      // setProperties();
+      Session session = HibernateUtil.getSession();
+      StringBuffer hql = new StringBuffer();
+      hql.append("from House where 1=1");
+    /*  if (emp.getId() != 0) {
+          hql.append(" and id=:id");
+      }
+      if (StringUtils.isNotEmpty(house.getJob())) {
+          hql.append(" and job=:job");
+      }
+      if (StringUtils.isNotEmpty(house.getName())) {
+          hql.append(" and name=:name");
+      }*/
+      Query query = session.createQuery(hql.toString());
+     // query.setProperties(house);
+      //设置完条件后
+      query.setFirstResult((page-1)*3);
+      query.setMaxResults(3);
+      return query.list();
+	}
+
+	@Override
+	public int count(House house) {
+		// TODO Auto-generated method stub
+		Session session=HibernateUtil.getSession();
+		 StringBuffer hql = new StringBuffer();
+	      hql.append("from House where 1=1");
+	      /*  if (emp.getId() != 0) {
+          hql.append(" and id=:id");
+      }
+      if (StringUtils.isNotEmpty(house.getJob())) {
+          hql.append(" and job=:job");
+      }
+      if (StringUtils.isNotEmpty(house.getName())) {
+          hql.append(" and name=:name");
+      }*/
+      Query query = session.createQuery(hql.toString());
+     // query.setProperties(house);
+      return query.list().size();
+	}
+}

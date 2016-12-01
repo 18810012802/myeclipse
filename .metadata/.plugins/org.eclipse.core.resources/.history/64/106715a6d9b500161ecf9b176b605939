@@ -1,0 +1,8 @@
+package com.mql.domain;
+
+public class TreeList {
+	private Integer id;
+	private String state;
+	private String text;
+	private Integer tid;
+}

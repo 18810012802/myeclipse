@@ -1,0 +1,16 @@
+$(function(){
+	$('#box').tree({
+		animate : true,
+		checkbox : true,
+		cascadeCheck : false,
+		onlyLeafCheck : true,
+		lines : true,
+		dnd : true,
+		data : [{
+			
+		}],
+		formatter : function(node){
+			return node.text;
+		}
+	});
+});

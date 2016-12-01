@@ -1,0 +1,41 @@
+$(function(){
+	$('#myform :input[name="name"]').change(function(){
+		var name=$('#myform :input[name="name"]').val();
+		$.ajax({
+			type : 'POST',
+			url : 'SearchHouseServlet',
+			data : {
+				type : 'uniqueName',
+				name : name
+			},
+			success : function(msg) {
+				$('#pa').remove();
+				alert(msg);
+				$('#myform :input[name="name"]').after(msg);
+
+			}
+
+		});
+	});
+	$('#myform :input[name="repassword"]').change(function(){
+		var repassword=$('#myform :input[name="repassword"]').val();
+		var password=$('#myform :input[name="password"]').val();
+		if(repassword!=password){
+			$('#repa').remove();
+			$('#myform :input[name="repassword"]').after("<span id='repa' style='color:red;'>密码输入不一致！</span>");
+		}else{
+			$('#repa').remove();
+			$('#myform :input[name="repassword"]').after("<span id='repa' style='color:green;'>密码输入正确！</span>");
+		}
+	});
+	/*$('#myform :input[name="repassword"]').focus(function(){
+		$(this).attr("data-oval",$(this).val);
+		
+	}).blur(function(){
+		var oldVal=($(this).attr("data-oval"));
+		var newVal=($(this).val());
+		if(oldVal!=newVal){
+			alert(newVal);
+		}
+	});*/
+});

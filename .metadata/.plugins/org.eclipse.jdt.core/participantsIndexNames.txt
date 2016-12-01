@@ -17,10 +17,14 @@ D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\969216345.ind
 \EasyUI\src
 D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\26688660.index
 \Hiber1\src
+D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\231915725.index
+\Hiber2\src
 D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2979039373.index
 \MessageSystem\src
 D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3157430825.index
 \MessageSystem\src
+D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\941228113.index
+\Hiber2\src
 D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2656299347.index
 \MessageSystem\src
 D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1656870989.index

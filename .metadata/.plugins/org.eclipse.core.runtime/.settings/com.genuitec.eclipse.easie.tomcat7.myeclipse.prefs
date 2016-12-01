@@ -1,6 +1,6 @@
-ENDORSED_DIRS="E\:\\Users\\Administrator\\MyEclipse Professional\\plugins\\com.genuitec.eclipse.easie.tomcat7.myeclipse_11.0.0.me201302261706\\tomcat/common/endorsed"
-JDK_HOME=E\:\\Users\\Administrator\\MyEclipse Professional\\binary\\com.sun.java.jdk.win32.x86_1.6.0.u43
-LIBRARY_PATH="E\:\\Users\\Administrator\\MyEclipse Professional\\binary\\com.sun.java.jdk.win32.x86_1.6.0.u43\\bin;E\:\\Users\\Administrator\\MyEclipse Professional\\plugins\\com.genuitec.eclipse.easie.tomcat7.myeclipse_11.0.0.me201302261706\\tomcat\\bin"
+ENDORSED_DIRS="D\:\\Users\\Administrator\\MyEclipse Professional\\plugins\\com.genuitec.eclipse.easie.tomcat7.myeclipse_11.0.0.me201302261706\\tomcat/common/endorsed"
+JDK_HOME=D\:\\Users\\Administrator\\MyEclipse Professional\\binary\\com.sun.java.jdk.win32.x86_64_1.6.0.u43
+LIBRARY_PATH="D\:\\Users\\Administrator\\MyEclipse Professional\\binary\\com.sun.java.jdk.win32.x86_64_1.6.0.u43\\bin;D\:\\Users\\Administrator\\MyEclipse Professional\\plugins\\com.genuitec.eclipse.easie.tomcat7.myeclipse_11.0.0.me201302261706\\tomcat\\bin"
 eclipse.preferences.version=1
 embedded.server.port=8082
 tomcat.configuration.version.current=7

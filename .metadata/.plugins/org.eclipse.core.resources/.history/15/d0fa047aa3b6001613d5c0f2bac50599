@@ -1,0 +1,29 @@
+$(function(){
+	$.ajax({
+		type : 'POST',
+		url : 'SearchHouseServlet',
+		data : {
+			type : 'street',
+			name : name
+			
+		},
+		success : function(msg) {
+			
+			
+		}
+
+	});
+	$.ajax({
+		type : 'POST',
+		url : 'SearchHouseServlet',
+		data : {
+			type : 'types',
+			name : name
+			
+		},
+		success : function(msg) {
+			
+		}
+
+	});
+});

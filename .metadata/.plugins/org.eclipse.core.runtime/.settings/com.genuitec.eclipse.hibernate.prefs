@@ -1,2 +1,5 @@
+com.genuitec.eclipse.hibernate.GEN_ABSTRACT=false
+com.genuitec.eclipse.hibernate.JAVA_FOLDER=/Hiber2/src
+com.genuitec.eclipse.hibernate.JAVA_PACKAGE=com.libo.po
 eclipse.preferences.version=1
 me.pref.version=4.1

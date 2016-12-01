@@ -1,0 +1,16 @@
+package com.libo.dao;
+
+import java.util.List;
+
+import org.hibernate.Query;
+
+import com.libo.po.Users;
+import com.libo.util.HibernateUtil;
+
+public class UsersDaoImpl implements UsersDao{
+	public List<Users> queryUsers(Users users){
+		Query query=HibernateUtil.getSession().createQuery("from users where 1=1 ");
+		if(SringUtils)
+	}
+	
+}

@@ -1,0 +1,48 @@
+package com.libo.service;
+
+import com.libo.dao.UsersDao;
+import com.libo.dao.UsersDaoImpl;
+import com.libo.po.Users;
+
+public class UsersServiceImpl implements UsersService {
+
+	@Override
+	public boolean login(Users users) {
+		// TODO Auto-generated method stub
+		UsersDao ud=new UsersDaoImpl();
+		if(ud.queryUsers(users).size() == 1){
+			Users u=ud.queryUsers(users).get(0);
+			if("1".equals(u.getIsadmin().trim()))
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public boolean add(Users users) {
+		// TODO Auto-generated method stub
+		UsersDao ud=new UsersDaoImpl();
+		
+		try {
+			ud.add(users);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		return true;
+	}
+
+	@Override
+	public boolean ifExists(Users ussers) {
+		// TODO Auto-generated method stub
+		UsersDao ud=new UsersDaoImpl();
+		if(ud.queryUsers(users).size() == 1){
+			Users u=ud.queryUsers(users).get(0);
+			if("1".equals(u.getIsadmin().trim()))
+			return true;
+		}
+		return false;
+	}
+
+}

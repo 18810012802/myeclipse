@@ -1,0 +1,16 @@
+package com.libo.dao;
+
+import java.util.List;
+
+import com.libo.po.Street;
+import com.libo.util.HibernateUtil;
+
+public class StreetDaoImpl implements StreetDao{
+
+	@Override
+	public List<Street> queryAll() {
+		// TODO Auto-generated method stub
+		return HibernateUtil.getSession().createQuery("from Street").list();
+	}
+
+}
