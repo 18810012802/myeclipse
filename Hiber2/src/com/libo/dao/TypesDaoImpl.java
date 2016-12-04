@@ -5,7 +5,7 @@ import java.util.List;
 import com.libo.po.Types;
 import com.libo.util.HibernateUtil;
 
-public class TypesDaoImpl implements TypesDao{
+public class TypesDaoImpl implements TypesDao {
 
 	@Override
 	public List<Types> queryAll() {

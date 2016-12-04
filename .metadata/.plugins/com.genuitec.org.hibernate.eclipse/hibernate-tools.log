@@ -1,0 +1,6 @@
+2016-12-01 19:50:14,329 0      [     Worker-168] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in customer. Asking rev.eng. strategy
+2016-12-01 19:50:14,395 66     [     Worker-168] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for customer
+2016-12-01 19:52:25,234 130905 [     Worker-175] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in customer. Asking rev.eng. strategy
+2016-12-01 19:52:25,235 130906 [     Worker-175] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for customer
+2016-12-01 19:54:19,952 245623 [     Worker-176] WARN  ibernate.cfg.reveng.JDBCReader  - The JDBC driver didn't report any primary key columns in customer. Asking rev.eng. strategy
+2016-12-01 19:54:19,952 245623 [     Worker-176] WARN  ibernate.cfg.reveng.JDBCReader  - Rev.eng. strategy did not report any primary key columns for customer

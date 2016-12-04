@@ -13,16 +13,16 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value="alert" key="selection"/>
+		<item value="PrintWriter" key="selection"/>
 		<list key="findhistory">
+			<item value="l"/>
+			<item value="PrintWriter"/>
+			<item value="Integer"/>
+			<item value="types_id"/>
 			<item value="alert"/>
+			<item value="details"/>
+			<item value="details.htm"/>
 			<item value="images"/>
-			<item value="getTotalByTrainNo"/>
-			<item value="types"/>
-			<item value="&quot;,&quot;"/>
-			<item value=","/>
-			<item value="train_no"/>
-			<item value="ids"/>
 		</list>
 		<list key="replacehistory">
 			<item value="+&quot;,&quot;+"/>

@@ -1,0 +1,111 @@
+package com.libo.po;
+
+
+
+/**
+ * CustomerId entity. @author MyEclipse Persistence Tools
+ */
+
+public class CustomerId  implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Integer id;
+     private String tel;
+     private Integer age;
+     private String firstname;
+     private String lastname;
+
+
+    // Constructors
+
+    /** default constructor */
+    public CustomerId() {
+    }
+
+    
+    /** full constructor */
+    public CustomerId(Integer id, String tel, Integer age, String firstname, String lastname) {
+        this.id = id;
+        this.tel = tel;
+        this.age = age;
+        this.firstname = firstname;
+        this.lastname = lastname;
+    }
+
+   
+    // Property accessors
+
+    public Integer getId() {
+        return this.id;
+    }
+    
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getTel() {
+        return this.tel;
+    }
+    
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public Integer getAge() {
+        return this.age;
+    }
+    
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public String getFirstname() {
+        return this.firstname;
+    }
+    
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return this.lastname;
+    }
+    
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+   
+
+
+
+   public boolean equals(Object other) {
+         if ( (this == other ) ) return true;
+		 if ( (other == null ) ) return false;
+		 if ( !(other instanceof CustomerId) ) return false;
+		 CustomerId castOther = ( CustomerId ) other; 
+         
+		 return ( (this.getId()==castOther.getId()) || ( this.getId()!=null && castOther.getId()!=null && this.getId().equals(castOther.getId()) ) )
+ && ( (this.getTel()==castOther.getTel()) || ( this.getTel()!=null && castOther.getTel()!=null && this.getTel().equals(castOther.getTel()) ) )
+ && ( (this.getAge()==castOther.getAge()) || ( this.getAge()!=null && castOther.getAge()!=null && this.getAge().equals(castOther.getAge()) ) )
+ && ( (this.getFirstname()==castOther.getFirstname()) || ( this.getFirstname()!=null && castOther.getFirstname()!=null && this.getFirstname().equals(castOther.getFirstname()) ) )
+ && ( (this.getLastname()==castOther.getLastname()) || ( this.getLastname()!=null && castOther.getLastname()!=null && this.getLastname().equals(castOther.getLastname()) ) );
+   }
+   
+   public int hashCode() {
+         int result = 17;
+         
+         result = 37 * result + ( getId() == null ? 0 : this.getId().hashCode() );
+         result = 37 * result + ( getTel() == null ? 0 : this.getTel().hashCode() );
+         result = 37 * result + ( getAge() == null ? 0 : this.getAge().hashCode() );
+         result = 37 * result + ( getFirstname() == null ? 0 : this.getFirstname().hashCode() );
+         result = 37 * result + ( getLastname() == null ? 0 : this.getLastname().hashCode() );
+         return result;
+   }   
+
+
+
+
+
+}

@@ -1,0 +1,93 @@
+package com.libo.po;
+
+
+
+/**
+ * Carport entity. @author MyEclipse Persistence Tools
+ */
+
+public class Carport  implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Integer id;
+     private Car car;
+     private String location;
+     private Integer size;
+     private Car car;
+
+
+    // Constructors
+
+    /** default constructor */
+    public Carport() {
+    }
+
+	/** minimal constructor */
+    public Carport(Integer id, Car car) {
+        this.id = id;
+        this.car = car;
+    }
+    
+    /** full constructor */
+    public Carport(Integer id, Car car, String location, Integer size, Car car) {
+        this.id = id;
+        this.car = car;
+        this.location = location;
+        this.size = size;
+        this.car = car;
+    }
+
+   
+    // Property accessors
+
+    public Integer getId() {
+        return this.id;
+    }
+    
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Car getCar() {
+        return this.car;
+    }
+    
+    public void setCar(Car car) {
+        this.car = car;
+    }
+
+    public String getLocation() {
+        return this.location;
+    }
+    
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public Integer getSize() {
+        return this.size;
+    }
+    
+    public void setSize(Integer size) {
+        this.size = size;
+    }
+
+    public Car getCar() {
+        return this.car;
+    }
+    
+    public void setCar(Car car) {
+        this.car = car;
+    }
+   
+
+
+
+
+
+
+
+
+}

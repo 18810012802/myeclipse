@@ -1,0 +1,95 @@
+$(function() {
+	$('#myform :input[name="title"]')
+			.keyup(
+					function() {
+						var title = $('#myform :input[name="floorage"]').val();
+						if (/^[a-z0-9_-]{3,16}$/.test(title)) {
+							$('#tit').remove();
+							$('#myform :input[name="title"]')
+									.after(
+											"<span id='tit' style='color:red;'>请输入3到16位的字母数字中线或下划线！</span>");
+						}
+					});
+	$('#myform :input[name="floorage"]')
+	.keyup(
+			function() {
+				var floorage = $('#myform :input[name="floorage"]').val();
+				if (/^[a-z0-9_-]{3,16}$/.test(floorage)) {
+					$('#tit').remove();
+					$('#myform :input[name="floorage"]')
+							.after(
+									"<span id='tit' style='color:red;'>请输入3到16位的字母数字中线或下划线！</span>");
+				}
+			});
+	var tid = $(":input[name='types_id']").val().trim();
+	alert(tid);
+	$.ajax({
+		type : 'POST',
+		dataType : 'json',
+		url : 'SearchHouseServlet',
+		data : {
+			type : 'types',
+		},
+		success : function(msg) {
+
+			for ( var i = 0; i < msg.length; i++) {
+				var ms = msg[i];
+				$("#types").append(
+						"<option value=" + ms.id + ">" + ms.name
+								+ "</option>);");
+				// value="${msg.street.district.id }"
+			}
+			$("#types").val(tid);
+		}
+	});
+
+	$.post("SearchHouseServlet", {
+		type : 'district'
+	}, function(msg) {
+
+		var did = $(":input[name='dis_id']").val().trim();
+		var sid = $(":input[name='str_id']").val().trim();
+		for ( var i = 0; i < msg.length; i++) {
+			var ms = msg[i];
+			$("#district_id").append(
+					"<option value=" + ms.id + ">" + ms.name + "</option>);");
+		}
+		$("#district_id").val(did);
+		$.post("SearchHouseServlet", {
+			type : 'streetById',
+			id : did
+		}, function(result) {
+			$("#street_id").find("option").remove();
+			/*
+			 * if(result.length==0){ $("#street_id").append("<option
+			 * value="+no+">"+data.name+"</option>"); }
+			 */
+			for ( var i = 0; i < result.length; i++) {
+				var data = result[i];
+				$("#street_id").append(
+						"<option value=" + data.id + ">" + data.name
+								+ "</option>");
+			}
+			$("#street_id").val(sid);
+		}, "json");
+	}, "json");
+
+	$("#district_id").change(
+			function() {
+				var val = $(this).val();
+				// if(val!='0'){
+				$("#street_id").find("option").remove();
+				$.post("SearchHouseServlet", {
+					type : 'streetById',
+					id : val
+				}, function(result) {
+					for ( var i = 0; i < result.length; i++) {
+						var data = result[i];
+						$("#street_id").append(
+								"<option value=" + data.id + ">" + data.name
+										+ "</option>");
+					}
+				}, "json");
+
+			});
+});

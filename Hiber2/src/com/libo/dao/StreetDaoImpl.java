@@ -6,7 +6,7 @@ import com.libo.po.District;
 import com.libo.po.Street;
 import com.libo.util.HibernateUtil;
 
-public class StreetDaoImpl implements StreetDao{
+public class StreetDaoImpl implements StreetDao {
 
 	@Override
 	public List<Street> queryAll() {
@@ -17,7 +17,9 @@ public class StreetDaoImpl implements StreetDao{
 	@Override
 	public List<Street> queryById(District district) {
 		// TODO Auto-generated method stub
-		return HibernateUtil.getSession().createQuery("from Street where district=?").setParameter(0, district).list();
+		return HibernateUtil.getSession()
+				.createQuery("from Street where district=?")
+				.setParameter(0, district).list();
 	}
 
 }

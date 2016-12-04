@@ -200,7 +200,7 @@ public class TrainDao extends BaseDao {
 	public int update(TrainInfo ti) {
 		int rows = 0;
 		getConnection();
-		if (getTotalByTrainNo(ti.getTrain_no()) == 0) {
+		//if (getTotalByTrainNo(ti.getTrain_no()) == 0) {
 			String sql = "update train_info set start_station=?,arrival_station=?,start_time=?,arrival_time=?,type=?,runtime=?,mile=?, train_no=? where no=?";
 			try {
 				pst = conn.prepareStatement(sql);
@@ -228,7 +228,7 @@ public class TrainDao extends BaseDao {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
+		//}
 		return rows;
 	}
 

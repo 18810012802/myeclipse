@@ -1,0 +1,31 @@
+package com.libo.po;
+
+/**
+ * Car entity. @author MyEclipse Persistence Tools
+ */
+
+public class Car implements java.io.Serializable {
+
+	// Fields
+
+	private Integer id;
+	private Carport carport;
+	private String number;
+	private String brand;
+
+	// Constructors
+
+	/** default constructor */
+	public Car() {
+	}
+
+	/** minimal constructor */
+	public Car(Integer id, Carport carport) {
+		this.id = id;
+		this.carport = carport;
+	}
+
+
+	
+	
+}

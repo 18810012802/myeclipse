@@ -9,7 +9,9 @@ public class DistrictDaoImpl implements DistrictDao {
 
 	@Override
 	public List<District> queryAll() {
-		// TODO Auto-generated method stub
+		/**
+		 * 查询所有区
+		 */
 		return HibernateUtil.getSession().createQuery("from District").list();
 	}
 }
