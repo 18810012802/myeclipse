@@ -1,9 +1,0 @@
-package com.libo.service;
-
-import java.util.List;
-
-import com.libo.po.Users;
-
-public interface UsersService {
-	public boolean login(Users users);
-}

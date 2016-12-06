@@ -1,5 +1,0 @@
-package com.libo.dao;
-
-public interface UsersDao {
-
-}

@@ -6,8 +6,8 @@ $(function(){
 		onlyLeafCheck : true,
 		lines : true,
 		dnd : true,
-		url : "PublishServlet?type=tree",
-		/*data : [
+		//url : "PublishServlet?type=tree",
+		data : [
 			{
 				"text" : "系统管理",
 				"children" : [
@@ -31,7 +31,7 @@ $(function(){
 						}
 		              ]
 			}
-		],*/
+		],
 		formatter : function(node){
 			return node.text;
 		},
@@ -43,6 +43,7 @@ $(function(){
 				top:e.pageY
 			});
 		},
+		
 		onDrop : function(target,source,point){
 			alert(target+"/"+source+"/"+point);
 		}

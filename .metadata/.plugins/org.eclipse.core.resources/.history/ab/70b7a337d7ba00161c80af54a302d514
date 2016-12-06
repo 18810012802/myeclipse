@@ -1,0 +1,20 @@
+package com.libo.service;
+
+import java.util.List;
+
+import com.libo.dao.DistrictDao;
+import com.libo.dao.DistrictDaoImpl;
+import com.libo.dao.HouseDao;
+import com.libo.dao.StuImpl;
+import com.libo.dao.StuDao;
+import com.libo.dao.StuDao;
+import com.libo.dao.TypesDao;
+import com.libo.dao.TypesDaoImpl;
+import com.libo.po.District;
+import com.libo.po.House;
+import com.libo.po.Street;
+import com.libo.po.Types;
+
+public class StuImpl implements StuService {
+
+}

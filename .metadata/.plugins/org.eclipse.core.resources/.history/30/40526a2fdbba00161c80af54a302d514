@@ -1,0 +1,9 @@
+package com.libo.dao;
+
+import java.util.List;
+
+import com.libo.po.Students;
+
+public interface StuDao {
+	public List<Students> queryAll(Students stu);
+}

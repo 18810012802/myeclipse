@@ -16,7 +16,7 @@
 <script src="js/jquery-1.9.1.js"></script>
 <script src="easyui\jquery.easyui.min.js"></script>
 <script src="easyui\locale\easyui-lang-zh_CN.js"></script>
-<script src="js/index.js"></script>
+<script src="js/tree.js"></script>
 <link rel="stylesheet" type="text/css"
 	href="easyui/themes/default/easyui.css" />
 <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />

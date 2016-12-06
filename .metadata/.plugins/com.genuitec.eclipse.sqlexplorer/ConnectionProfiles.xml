@@ -18,6 +18,26 @@
     <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
         <activate>false</activate>
         <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>3e744b2:158ce799edb:-7f92</string>
+        </driverIdentifier>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>3e744b2:158ce799edb:-7fd7</string>
+        </identifier>
+        <name>oracle.jdbc.OracleDriver</name>
+        <password encryption="true">qE3xSa5e3Vc=</password>
+        <promptForPassword>false</promptForPassword>
+        <schema Indexed="true">
+            <Bean Class="net.sourceforge.squirrel_sql.fw.util.beanwrapper.StringWrapper">
+                <string>SCOTT</string>
+            </Bean>
+        </schema>
+        <schemaDisplayPolicy>2</schemaDisplayPolicy>
+        <url>jdbc:oracle:thin:@localhost:1521:orcl</url>
+        <userName>scott</userName>
+    </Bean>
+    <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
+        <activate>false</activate>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
             <string>-35b47965:158756eb14d:-7fde</string>
         </driverIdentifier>
         <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">

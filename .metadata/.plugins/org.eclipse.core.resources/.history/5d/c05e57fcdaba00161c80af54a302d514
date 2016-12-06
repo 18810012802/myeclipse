@@ -1,0 +1,30 @@
+package com.libo.dao;
+
+import java.util.List;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+
+import com.libo.po.Students;
+import com.libo.utils.HibernateUtil;
+
+
+public class StuImpl implements StuDao {
+
+	@Override
+	public List<Students> queryAll(Students stu) {
+		// TODO Auto-generated method stub
+		Session session=HibernateUtil.getSession();
+		String hql="from Students";
+		
+		if(stu!=null&& stu.getStuId()!=null){
+			hql+=" where stuId=:stuId";
+		}
+		Query q=session.createQuery(hql);
+		
+		List<Students> list=session.createQuery(hql).list();
+				
+		return list;
+	}
+	
+}
