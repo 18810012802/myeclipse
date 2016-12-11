@@ -2,9 +2,12 @@ package com.libo.dao;
 
 import java.util.List;
 
+import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Query;
 import org.hibernate.Session;
+import org.hibernate.criterion.MatchMode;
+import org.hibernate.criterion.Restrictions;
 
 import com.libo.po.House;
 import com.libo.util.HibernateUtil;
@@ -112,5 +115,73 @@ public class HouseDaoImpl implements HouseDao {
 			return false;
 		}
 		return true;
+	}
+
+	@Override
+	public List<House> queryCriteria(House house, int page, int size) {
+		// TODO Auto-generated method stub
+		Session session = HibernateUtil.getSession();
+		Criteria criteria = session.createCriteria(House.class);
+		if (house.getId() != null) {
+			criteria.add(Restrictions.eq("id", house.getId()));
+		}
+		if (house.getTitle() != null && !"".equals(house.getTitle().trim())) {
+			criteria.add(Restrictions.ilike("title", house.getTitle(),
+					MatchMode.ANYWHERE));
+		}
+		if (house.getMinFloorage() != null) {
+			criteria.add(Restrictions.gt("floorage", house.getMinFloorage()));
+		}
+		if (house.getMaxFloorage() != null) {
+			criteria.add(Restrictions.lt("floorage", house.getMaxFloorage()));
+		}
+		if (house.getMinPrice() != null) {
+			criteria.add(Restrictions.gt("price", house.getMinPrice()));
+		}
+		if (house.getMaxPrice() != null) {
+			criteria.add(Restrictions.lt("price", house.getMaxPrice()));
+		}
+		if (house.getTypes() != null) {
+			criteria.add(Restrictions.eq("types", house.getTypes()));
+		}
+		if (house.getStreet() != null) {
+			criteria.add(Restrictions.eq("street", house.getStreet()));
+		}
+		criteria.setFirstResult((page - 1) * size);
+		criteria.setMaxResults(size);
+		return criteria.list();
+	}
+
+	@Override
+	public int countCriteria(House house) {
+		Session session = HibernateUtil.getSession();
+		Criteria criteria = session.createCriteria(House.class);
+
+		if (house.getId() != null) {
+			criteria.add(Restrictions.eq("id", house.getId()));
+		}
+		if (house.getTitle() != null && !"".equals(house.getTitle().trim())) {
+			criteria.add(Restrictions.ilike("title", house.getTitle(),
+					MatchMode.ANYWHERE));
+		}
+		if (house.getMinFloorage() != null) {
+			criteria.add(Restrictions.gt("floorage", house.getMinFloorage()));
+		}
+		if (house.getMaxFloorage() != null) {
+			criteria.add(Restrictions.lt("floorage", house.getMaxFloorage()));
+		}
+		if (house.getMinPrice() != null) {
+			criteria.add(Restrictions.gt("price", house.getMinPrice()));
+		}
+		if (house.getMaxPrice() != null) {
+			criteria.add(Restrictions.lt("price", house.getMaxPrice()));
+		}
+		if (house.getTypes() != null) {
+			criteria.add(Restrictions.eq("types", house.getTypes()));
+		}
+		if (house.getStreet() != null) {
+			criteria.add(Restrictions.eq("street", house.getStreet()));
+		}
+		return criteria.list().size();
 	}
 }

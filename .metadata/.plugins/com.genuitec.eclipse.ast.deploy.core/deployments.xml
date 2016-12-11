@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <deployments>
   <deployment alt-context-root="" context-root="/EasyUI" deployment-path="D:/myeclipse/.metadata/.me_tcat7/webapps/EasyUI" project-name="EasyUI" server-id="myeclipseTomcatServer7" state="DEPLOYED" status="Deployment failure on MyEclipse Tomcat 7. Could not copy all resources to D:\myeclipse\.metadata\.me_tcat7\webapps\EasyUI. If a file is locked, you can wait until the lock times out to redeploy, or stop the server and redeploy, or manually remove the deployment at D:\myeclipse\.metadata\.me_tcat7\webapps\EasyUI" type="WEB"/>
-  <deployment alt-context-root="" context-root="/Stu" deployment-path="D:/理博软件/apache-tomcat-6.0.44/webapps/Stu" project-name="Stu" server-id="tomcat6Server" state="REDEPLOY" status="Deployment is out of date due to changes in the underlying project contents. You'll need to manually 'Redeploy' the project to update the deployed archive." type="WEB"/>
-  <deployment context-root="/Hiber3" deployment-path="D:/理博软件/apache-tomcat-6.0.44/webapps/Hiber3" project-name="Hiber3" server-id="tomcat6Server" state="DEPLOYED" type="WEB"/>
+  <deployment context-root="/Hiber2" deployment-path="D:/理博软件/apache-tomcat-6.0.44/webapps/Hiber2" project-name="Hiber2" server-id="tomcat6Server" state="DEPLOYED" type="WEB"/>
 </deployments>

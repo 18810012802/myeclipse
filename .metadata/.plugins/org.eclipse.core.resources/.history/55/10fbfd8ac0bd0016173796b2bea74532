@@ -1,0 +1,15 @@
+package com.libo.interceptor;
+
+import EmptyInterceptor;
+
+public class MyInterceptor extends EmptyInterceptor {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

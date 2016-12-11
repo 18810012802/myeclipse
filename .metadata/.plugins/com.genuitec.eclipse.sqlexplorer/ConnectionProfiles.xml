@@ -18,7 +18,7 @@
     <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">
         <activate>false</activate>
         <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
-            <string>3e744b2:158ce799edb:-7f92</string>
+            <string>3d9683d1:158e1272303:-7f6c</string>
         </driverIdentifier>
         <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
             <string>3e744b2:158ce799edb:-7fd7</string>
@@ -32,7 +32,7 @@
             </Bean>
         </schema>
         <schemaDisplayPolicy>2</schemaDisplayPolicy>
-        <url>jdbc:oracle:thin:@localhost:1521:orcl</url>
+        <url>jdbc:oracle:thin:@localhost:1521:oracle1</url>
         <userName>scott</userName>
     </Bean>
     <Bean Class="com.genuitec.eclipse.sqlexplorer.utils.ConnectionProfile">

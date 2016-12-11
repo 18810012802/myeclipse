@@ -1,6 +1,8 @@
 package com.libo.dao;
 
-import java.util.Iterator;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.List;
 
 import org.hibernate.CacheMode;
@@ -10,109 +12,212 @@ import org.hibernate.ScrollMode;
 import org.hibernate.ScrollableResults;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.jdbc.Work;
 
 import com.libo.po.Classes;
 import com.libo.po.Students;
 import com.libo.utils.HibernateUtil;
 
-
 public class StuImpl implements StuDao {
 	public static void main(String[] args) {
-		Session session=HibernateUtil.getSession();
+		Session session = HibernateUtil.getSession();
 		session.getTransaction().begin();
+
+		/*
+		 * String hql=
+		 * "select distinct s from Students s inner join fetch s.classes c where c.clsId=:clsId"
+		 * ; Query q=session.createQuery(hql); q.setInteger("clsId", 3); List
+		 * list=q.list();
+		 */
+		//
+/*		List list = session.createCriteria(Classes.class)
+				.add(Restrictions.gt("clsId", 0)).createCriteria("studentses")
+				.add(Restrictions.gt("stuId", 2)).list();
+		List list1 = session.createCriteria(Classes.class)
+				.add(Restrictions.gt("clsId", 0))
+				.createAlias("studentses", "s")
+				.add(Restrictions.gt("s.stuId", 2)).list();
+		//投影、聚合、分组
+		List list2 = session
+				.createCriteria(Classes.class)
+				.add(Restrictions.gt("clsId", 0))
+				.setFetchMode("students", FetchMode.JOIN)
+				.setProjection(
+						Projections
+								.projectionList()
+								.add(Property.forName("clsName"))
+								.add(Projections.rowCount())
+								.add(Projections.max("clsId"))
+								.add(Projections.alias(
+										Projections.count("clsName"), "c"))
+								.add(Projections.groupProperty("clsId"))
+								.add(Projections.groupProperty("clsName")))
+				.addOrder(Order.asc("c")).list();
+		//离线查询
+		DetachedCriteria query = DetachedCriteria.forClass(Students.class)
+				.setProjection(Property.forName("stuName"));
+		//绑定session
+		List list3 = query.getExecutableCriteria(session).list();
+		//离线子查询
+		DetachedCriteria subQuery=DetachedCriteria.forClass(Students.class)
+				.setProjection(Property.forName("stuName"));
+		//使用离线子查询
+		List list4=session.createCriteria(Students.class).add(Property.forName("stuName").in(subQuery))
+				.list();
+				
+		for (Iterator i = list4.iterator(); i.hasNext();) {
+			Object o = i.next();
+			//Students ss=(Students)o;
+			Class<?> c=o.getClass();
+			boolean isStu=c.isAssignableFrom(Students.class);
+			boolean isCls=c.isAssignableFrom(Classes.class);
+			boolean isObjs=c.isAssignableFrom(new Object[0].getClass());
+			if (isCls ||o instanceof Classes) {
+				System.out.println(((Classes) o).getClsName());
+				System.out.println(((Classes) o).getStudentses());
+			} else if (isStu || o instanceof Students) {
+				Students s = (Students) o;
+				System.out.println(((Students) o).getStuName());
+			} else if(isObjs || o instanceof Students){
+				Object[] objs = (Object[]) o;
+				System.out.println(objs[0].toString() + "/"
+						+ objs[4].toString());
+			}else {
+			
+				System.out.println(o);
+			}
+
+		}*/
+	/*	List list=session.createSQLQuery("select * from students")
+		.addScalar("stu_Name",StandardBasicTypes.STRING).list();
+		List list1=session.createSQLQuery("select * from students where stu_id=:stuId")
+				.addEntity(Students.class)
+				.setInteger("stuId", 2)
+				.list();
+		String sqlString="select s.*,c.* from students s,classes c where s.class_id=c.cls_id";
+		List l2=session.createSQLQuery(sqlString)
+				.addEntity("s",Students.class)
+				.addEntity("c",Classes.class)
+				.list();
+		String sql="select s.stu_id,s.stu_name,c.cls_name from students s,classes c where s.class_id=c.cls_id";
+		List l3=session.createSQLQuery(sql)
+				.setResultTransformer(Transformers.aliasToBean(StuCls.class))
+				.list();
+		String s="select s.*,c.* from students s,classes c where s.class_id=c.cls_id";
+		List l3=session.createSQLQuery(s)
+				.addEntity("s",Students.class)
+				.addJoin("c", "s.classes")
+				.list();*/
+		/*List ll=session.getNamedQuery("queryTest")
+				.list();*/
+		/*List ll1=session.get2NamedQuery("callProcedure")
+				.list();*/
 		/*Students s=new Students();
-		Classes c=new Classes();
-		Set<Students> ss=new HashSet<Students>();
+		s.setStuId(11);
+		s.setStuName("ifjj");
+		session.save(s);*/
+/*		session.enableFilter("stu")
+		.setParameter("min", 1).setParameter("max", 5);
+		List<Students> l=session.createQuery("from Students").setCacheable(true).list();
 		
-		s.setAge(10);
-		//s.setStuId(11);
-		s.setStuName("1");
-		c.setClsId(7);
-		c.setClsName("七班");
-		//s.setClasses(c);
-		ss.add(s);
-		c.setStudentses(ss);
-		session.save(c);*/
-		//String hql="from Students s where s.classes.clsId=:clsId";
-		String hql="select distinct s from Students s inner join fetch s.classes c where c.clsId=:clsId";
-		Query q=session.createQuery(hql);
-		q.setInteger("clsId", 3);
-		List list=q.list();
-		//Students s=(Students)session.get(Students.class, 2);
-		//System.out.println(s.getClasses());
-		for(Iterator i=list.iterator();i.hasNext();){
-			Object[] objs=(Object[])i.next();
-			
-			
-			System.out.println(java.util.Arrays.toString(objs));
-		}
+		List<Students> l3=session.createQuery("from Students").setCacheable(true).list();
+	    //Students s=(Students)session.get(Students.class, 2);
+	    //Students s1=(Students)session.get(Students.class, 2);
+		session.getTransaction().commit();
+		session.beginTransaction();
+		session.clear();
+		session.enableFilter("stu")
+		.setParameter("min", 1).setParameter("max", 5);
+		//Cache cache=session.getSessionFactory().getCache();
+		//cache.evictEntity(Students.class, 2);
+		System.out.println("================================");
+		List<Students> ll=session.createQuery("from Students").setCacheable(true).list();
+		 //Students s2=(Students)session.get(Students.class, 2);
+		long hitCount=session.getSessionFactory()
+				.getStatistics()
+				.getQueryCacheHitCount();
+		System.out.println("查询缓存命中的次数"+hitCount);
+		Map cacheEntries = session.getSessionFactory().getStatistics()
+				.getSecondLevelCacheStatistics("com.libo.po.Students")
+				.getEntries();
+		System.out.println(cacheEntries);
+				
 		session.getTransaction().commit();
 		session.close();
+		*/
+		//Session session=HibernateUtil.getSession();
+		session.doWork(new Work() {
+			@Override
+			public void execute(Connection conn) throws SQLException {
+				CallableStatement cs=conn.prepareCall("{call insert_emp}");
+				cs.executeUpdate();
+			}
+		});
 	}
-	private void addStudents(List<Students> stus) throws Exception{
-		Session session=HibernateUtil.getSession();
-		Transaction tx=session.beginTransaction();
-		for(int i=0;i<stus.size();i++){
-			Students s1=stus.get(i);
+
+	private void addStudents(List<Students> stus) throws Exception {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		for (int i = 0; i < stus.size(); i++) {
+			Students s1 = stus.get(i);
 			session.save(s1);
-			if(i%20==0){
+			if (i % 20 == 0) {
 				session.flush();
 				session.clear();
 			}
-			
 		}
 		tx.commit();
 		HibernateUtil.closeSession();
 	}
-	
-	private void updateStudents() throws Exception{
-		Session session=HibernateUtil.getSession();
-		Transaction tx=session.beginTransaction();
-		ScrollableResults students=session.createQuery("from Students")
-				.setCacheMode(CacheMode.IGNORE)
-				.scroll(ScrollMode.FORWARD_ONLY);
-		int count=0;
-		while(students.next()){
-			Students s=(Students)students.get(0);
-			if(++count%20==0){
+
+	private void updateStudents() throws Exception {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		ScrollableResults students = session.createQuery("from Students")
+				.setCacheMode(CacheMode.IGNORE).scroll(ScrollMode.FORWARD_ONLY);
+		int count = 0;
+		while (students.next()) {
+			Students s = (Students) students.get(0);
+			if (++count % 20 == 0) {
 				session.flush();
 				session.clear();
 			}
-			
+
 		}
 		tx.commit();
 		HibernateUtil.closeSession();
 	}
-	private void updateStudents2() throws Exception{
-		Session session=HibernateUtil.getSession();
-		Transaction tx=session.beginTransaction();
-		String hqlUpdate="update Students set name=:newName";
-		int updateEntities=session.createQuery(hqlUpdate)
-				.setString("newName","新名字")
-				.executeUpdate();
+
+	private void updateStudents2() throws Exception {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		String hqlUpdate = "update Students set name=:newName";
+		int updateEntities = session.createQuery(hqlUpdate)
+				.setString("newName", "新名字").executeUpdate();
 		tx.commit();
 		HibernateUtil.closeSession();
 	}
-	private void deleteStudents() throws Exception{
-		Session session=HibernateUtil.getSession();
-		Transaction tx=session.beginTransaction();
-		String hqlDelete="delete Students";
-		int deletedEntities=session.createQuery(hqlDelete)
-				.executeUpdate();
+
+	private void deleteStudents() throws Exception {
+		Session session = HibernateUtil.getSession();
+		Transaction tx = session.beginTransaction();
+		String hqlDelete = "delete Students";
+		int deletedEntities = session.createQuery(hqlDelete).executeUpdate();
 		tx.commit();
 		HibernateUtil.closeSession();
 	}
+
 	@Override
 	public List<Students> queryAll(Students stu) {
 		// TODO Auto-generated method stub
-		Session session=HibernateUtil.getSession();
-		String hql="from Students";
-		if(stu!=null&& stu.getStuId()!=null){
-			hql+=" where stuId=:stuId";
+		Session session = HibernateUtil.getSession();
+		String hql = "from Students";
+		if (stu != null && stu.getStuId() != null) {
+			hql += " where stuId=:stuId";
 		}
-		Query q=session.createQuery(hql);
+		Query q = session.createQuery(hql);
 		q.setProperties(stu);
-		List<Students> list=q.list();
+		List<Students> list = q.list();
 		return list;
 	}
 
@@ -132,7 +237,7 @@ public class StuImpl implements StuDao {
 	@Override
 	public boolean saveOrUpdate(Students stu) {
 		// TODO Auto-generated method stub
-		
+
 		try {
 			HibernateUtil.getSession().saveOrUpdate(stu);
 		} catch (HibernateException e) {
@@ -146,15 +251,15 @@ public class StuImpl implements StuDao {
 	@Override
 	public List<Classes> queryAllClasses(Classes cla) {
 		// TODO Auto-generated method stub
-		Session session=HibernateUtil.getSession();
-		String hql="from Classes";
-		if(cla!=null&& cla.getClsId()!=null){
-			hql+=" where clsId=:clsId";
+		Session session = HibernateUtil.getSession();
+		String hql = "from Classes";
+		if (cla != null && cla.getClsId() != null) {
+			hql += " where clsId=:clsId";
 		}
-		Query q=session.createQuery(hql);
+		Query q = session.createQuery(hql);
 		q.setProperties(cla);
-		List<Classes> list=q.list();
+		List<Classes> list = q.list();
 		return list;
 	}
-	
+
 }

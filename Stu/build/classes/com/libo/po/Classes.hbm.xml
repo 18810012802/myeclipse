@@ -6,6 +6,7 @@
 -->
 <hibernate-mapping>
     <class name="com.libo.po.Classes" table="CLASSES" schema="SCOTT">
+        <cache usage="read-only"/>
         <id name="clsId" type="java.lang.Integer">
             <column name="CLS_ID" precision="6" scale="0" />
             <generator class="assigned"/>

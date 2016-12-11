@@ -21,7 +21,8 @@ public class HouseServiceImpl implements HouseService {
 	public List<House> query(House house, int page, int size) {
 		// TODO Auto-generated method stub
 		HouseDao hd = new HouseDaoImpl();
-		List<House> list = hd.query(house, page, size);
+		//List<House> list = hd.query(house, page, size);
+		List<House> list = hd.queryCriteria(house, page, size);
 		return list;
 	}
 
@@ -29,7 +30,8 @@ public class HouseServiceImpl implements HouseService {
 	public int count(House house, int size) {
 		// TODO Auto-generated method stub
 		HouseDao hd = new HouseDaoImpl();
-		int count = hd.count(house);
+		//int count = hd.count(house);
+		int count = hd.countCriteria(house);
 		int c = (count % size == 0) ? count / size : (count / size) + 1;
 		return c;
 	}
@@ -61,7 +63,8 @@ public class HouseServiceImpl implements HouseService {
 		HouseDao hd = new HouseDaoImpl();
 		House house = new House();
 		house.setId(id);
-		return hd.query(house, 1, 1).get(0);
+		//return hd.query(house, 1, 1).get(0);
+		return hd.queryCriteria(house, 1, 1).get(0);
 	}
 
 	@Override

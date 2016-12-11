@@ -318,7 +318,11 @@ public class SerachHouseServlet extends HttpServlet {
 			}
 		}
 	}
-
+	/**
+	 * 字符串转换成日期
+	 * @param houseDate
+	 * @return
+	 */
 	public Date strToDate(String houseDate) {
 		Date date = null;
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");

@@ -27,4 +27,20 @@
 <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
 <fullyQualifiedTypeName name="org.hibernate.CacheMode"/>
 <fullyQualifiedTypeName name="org.hibernate.ScrollMode"/>
+<fullyQualifiedTypeName name="org.hibernate.annotations.FetchMode"/>
+<fullyQualifiedTypeName name="org.hibernate.FetchMode"/>
+<fullyQualifiedTypeName name="org.hibernate.criterion.Projections"/>
+<fullyQualifiedTypeName name="javax.persistence.criteria.Order"/>
+<fullyQualifiedTypeName name="org.hibernate.criterion.Order"/>
+<fullyQualifiedTypeName name="org.hibernate.criterion.Property"/>
+<fullyQualifiedTypeName name="org.hibernate.criterion.DetachedCriteria"/>
+<fullyQualifiedTypeName name="org.hibernate.type.StandardBasicTypes"/>
+<fullyQualifiedTypeName name="org.hibernate.transform.Transformers"/>
+<fullyQualifiedTypeName name="org.hibernate.criterion.MatchMode"/>
+<fullyQualifiedTypeName name="javax.persistence.Cache"/>
+<fullyQualifiedTypeName name="org.hibernate.Cache"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.hibernate.type.Type"/>
+<fullyQualifiedTypeName name="org.hibernate.jdbc.Work"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 </qualifiedTypeNameHistroy>

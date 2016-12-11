@@ -24,6 +24,20 @@ public interface HouseDao {
 	 */
 	public int count(House house);
 	/**
+	 * 条件查询租房信息
+	 * @param house
+	 * @param page
+	 * @param size
+	 * @return
+	 */
+	public List<House> queryCriteria(House house,int page,int size);
+	/**
+	 * 条件查询租房记录条数
+	 * @param house
+	 * @return
+	 */
+	public int countCriteria(House house);
+	/**
 	 * 发布（添加或修改）租房信息
 	 * @param house
 	 * @return

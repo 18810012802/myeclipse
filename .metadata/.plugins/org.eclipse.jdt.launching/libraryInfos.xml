@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+<libraryInfo home="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre" version="1.6.0_43">
+<bootpath>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\resources.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\rt.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\sunrsasign.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\jsse.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\jce.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\charsets.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\modules\jdk.boot.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
 <libraryInfo home="E:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_1.6.0.u43" version="1.6.0_43">
 <bootpath>
 <entry path="E:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_1.6.0.u43\jre\lib\resources.jar"/>
@@ -38,7 +57,26 @@
 <entry path="E:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_1.6.0.u43\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre" version="1.6.0_43">
+<libraryInfo home="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43" version="1.6.0_43">
+<bootpath>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\resources.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\rt.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\sunrsasign.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\jsse.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\jce.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\charsets.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\modules\jdk.boot.jar"/>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="M:\Program Files\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43" version="1.6.0_43">
 <bootpath>
 <entry path="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\resources.jar"/>
 <entry path="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\rt.jar"/>
@@ -57,7 +95,7 @@
 <entry path="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\endorsed"/>
 </endorsedDirs>
 </libraryInfo>
-<libraryInfo home="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43" version="1.6.0_43">
+<libraryInfo home="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre" version="1.6.0_43">
 <bootpath>
 <entry path="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\resources.jar"/>
 <entry path="D:\Users\Administrator\MyEclipse Professional\binary\com.sun.java.jdk.win32.x86_64_1.6.0.u43\jre\lib\rt.jar"/>
