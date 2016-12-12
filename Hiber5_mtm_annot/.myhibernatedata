@@ -1,0 +1,20 @@
+#MyEclipse Hibernate Properties
+#Mon Dec 12 08:54:11 CST 2016
+genBasicCompId=true
+sessionFactoryName=com.libo.util.HibernateSessionFactory
+profile=
+daoSFId=
+jndiPath=
+detectM2M=true
+reStrategyClass=
+detectO2O=false
+springDaoFile=
+useJavaTypes=true
+keyGenerator=
+genVersionTag=false
+sessionFactoryId=
+basePersistenceClass=
+genAnnotations=true
+reSettingsFile=
+configFile=/Hiber5_mtm_annot/src/hibernate.cfg.xml
+createConfigFile=true

@@ -1,0 +1,29 @@
+package com.film.dao;
+
+import java.util.List;
+
+import org.hibernate.SQLQuery;
+import org.hibernate.Session;
+import org.hibernate.transform.Transformers;
+
+import com.film.po.Filminfo;
+import com.libo.util.HibernateUtil;
+
+public class FilmDaoImpl implements FilmDao {
+
+	@Override
+	public List query(String sql) {
+		// TODO 自动生成的方法存根
+		Session session=HibernateUtil.getSession();
+		SQLQuery sq=session.createSQLQuery("");
+		sq.setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP);
+		return null;
+	}
+
+	@Override
+	public void add(Filminfo t) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}

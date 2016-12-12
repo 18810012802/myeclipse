@@ -1,0 +1,14 @@
+package com.libo.dao;
+
+import java.util.List;
+import com.libo.util.*;
+import org.hibernate.Session;
+
+import com.libo.po.Teacher;
+import com.libo.util.HibernateUtil;
+
+public interface TSDao {
+	public List<Teacher> query();
+	public void add(Teacher t);
+	
+}

@@ -1,0 +1,81 @@
+package com.film.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.film.dao.FilmDao;
+import com.film.dao.FilmDaoImpl;
+import com.film.po.Filminfo;
+import com.film.po.Filmtype;
+
+public class FilmServlet extends HttpServlet {
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String type = request.getParameter("type");
+		//Users user = (Users) request.getSession().getAttribute("user");
+		if("add".equals(type)){
+			String typeId=request.getParameter("filmType");
+			String filmName=request.getParameter("filmName");
+			String actor=request.getParameter("actor");
+			String director=request.getParameter("director");
+			String ticketPrice=request.getParameter("ticketPrice");
+			Filminfo fi=new Filminfo();
+			Filmtype ft=new Filmtype();
+			ft.setTypeid(Integer.parseInt(typeId));
+			fi.setFilmtype(ft);
+			fi.setActor(actor);
+			fi.setDirector(director);
+			fi.setFilmname(filmName);
+			fi.setTicketprice(Integer.parseInt(ticketPrice));
+			FilmDao fd=new FilmDaoImpl();
+			fd.add(fi);
+			/*List<Filmtype> msgs=fd.query();
+			request.setAttribute("msgs", msgs);*/
+			//request.getRequestDispatcher("FilmServlet").forward(request, response);
+			response.sendRedirect("FilmServlet");
+		}else if("query".equals(type)){
+			
+		}else if("filmType".equals(type)){
+			FilmDao fd=new FilmDaoImpl();
+			String msg=fd.queryFilmTypes();
+			PrintWriter out=response.getWriter();
+			out.print(msg);
+			out.close();
+		}else{
+			FilmDao fd=new FilmDaoImpl();
+			List<Filminfo> msgs=fd.query();
+			request.setAttribute("msgs", msgs);
+			request.getRequestDispatcher("film.jsp").forward(request, response);
+		}
+	}
+	/**
+	 * 字符串转换成日期
+	 * @param houseDate
+	 * @return
+	 */
+	public Date strToDate(String houseDate) {
+		Date date = null;
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		try {
+			date = sdf.parse(houseDate);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return date;
+	}
+}

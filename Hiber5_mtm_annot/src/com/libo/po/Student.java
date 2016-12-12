@@ -1,0 +1,83 @@
+package com.libo.po;
+
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
+/**
+ * Student entity. @author MyEclipse Persistence Tools
+ */
+@Entity
+@Table(name = "STUDENT")
+public class Student implements java.io.Serializable {
+
+	// Fields
+
+	private Integer sid;
+	private String sname;
+	private Set<Teacher> teachers=new HashSet<Teacher>();
+
+	// Constructors
+	@ManyToMany(fetch=FetchType.LAZY)
+	@Cascade(value=(CascadeType.SAVE_UPDATE))
+	//@JoinTable(name="s_t",joinColumns={@JoinColumn(name="sid",nullable=false,updatable=false)},inverseJoinColumns={@JoinColumn(name="tid",nullable=false,updatable=false)})
+	public Set<Teacher> getTeachers() {
+		return teachers;
+	}
+
+	public void setTeachers(Set<Teacher> teachers) {
+		this.teachers = teachers;
+	}
+
+	/** default constructor */
+	public Student() {
+	}
+
+	/** minimal constructor */
+	public Student(Integer sid) {
+		this.sid = sid;
+	}
+
+	/** full constructor */
+	public Student(Integer sid, String sname) {
+		this.sid = sid;
+		this.sname = sname;
+	}
+
+	// Property accessors
+	@Id
+	@Column(name = "SID", unique = true, nullable = false, precision = 6, scale = 0)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="seq_st")
+	@SequenceGenerator(name="seq_st",sequenceName="seq_st",allocationSize=1,initialValue=1)
+	public Integer getSid() {
+		return this.sid;
+	}
+
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+
+	@Column(name = "SNAME", length = 64)
+	public String getSname() {
+		return this.sname;
+	}
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+}

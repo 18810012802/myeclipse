@@ -1,0 +1,32 @@
+package com.libo.po;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+
+/**
+ * Teacher entity. @author MyEclipse Persistence Tools
+ */
+@Entity
+@Table(name="TEACHER"
+    ,schema="SCOTT"
+)
+public class Teacher extends AbstractTeacher implements java.io.Serializable {
+
+    // Constructors
+
+    /** default constructor */
+    public Teacher() {
+    }
+
+	/** minimal constructor */
+    public Teacher(Integer tid) {
+        super(tid);        
+    }
+    
+    /** full constructor */
+    public Teacher(Integer tid, String tname) {
+        super(tid, tname);        
+    }
+   
+}

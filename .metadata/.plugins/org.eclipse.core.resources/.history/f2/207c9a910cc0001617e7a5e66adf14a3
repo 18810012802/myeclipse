@@ -1,0 +1,89 @@
+package com.film.servlet;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.film.dao.FilmDao;
+import com.film.dao.FilmDaoImpl;
+import com.film.po.Filminfo;
+import com.film.po.Filmtype;
+import com.libo.dao.TSDao;
+import com.libo.dao.TSDaoImpl;
+import com.libo.po.Student;
+import com.libo.po.Teacher;
+
+public class FilmServlet extends HttpServlet {
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String type = request.getParameter("type");
+		//Users user = (Users) request.getSession().getAttribute("user");
+		if("add".equals(type)){
+			/*filmId number(6) primary key,
+			typeId number(6),
+			filmName nvarchar2(32),
+			actor nvarchar2(32),
+			director nvarchar2(32),
+			ticketPrice number(6)*/
+			String typeId=request.getParameter("typeId");
+			String tname=request.getParameter("tname");
+			String filmName=request.getParameter("filmName");
+			String actor=request.getParameter("actor");
+			String director=request.getParameter("director");
+			String ticketPrice=request.getParameter("ticketPrice");
+			Filminfo fi=new Filminfo();
+			Filmtype ft=new Filmtype();
+			ft.setTypeid(Integer.parseInt(typeId));
+			fi.setFilmtype(ft);
+			fi.setActor(actor);
+			fi.setDirector(director);
+			fi.setFilmname(filmName);
+			fi.setTicketprice(Integer.parseInt(ticketPrice));
+			Teacher t=new Teacher();
+			Student s=new Student();
+			String tname=request.getParameter("tname");
+			String sname=request.getParameter("sname");
+			s.setSname(sname);
+			t.setTname(tname);
+			t.getStudents().add(s);
+			TSDao tsd=new TSDaoImpl();
+			tsd.add(t);
+			List<Teacher> msgs=tsd.query();
+			request.setAttribute("msgs", msgs);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		}else{
+			FilmDao tsd=new FilmDaoImpl();
+			List<Filminfo> msgs=tsd.query();
+			request.setAttribute("msgs", msgs);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		}
+	}
+	/**
+	 * 字符串转换成日期
+	 * @param houseDate
+	 * @return
+	 */
+	public Date strToDate(String houseDate) {
+		Date date = null;
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		try {
+			date = sdf.parse(houseDate);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return date;
+	}
+}

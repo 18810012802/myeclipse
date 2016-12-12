@@ -1,6 +1,7 @@
-ENDORSED_DIRS="D\:\\\u7406\u535A\u8F6F\u4EF6\\apache-tomcat-6.0.44/common/endorsed"
-JDK_HOME=D\:\\Users\\Administrator\\MyEclipse Professional\\binary\\com.sun.java.jdk.win32.x86_64_1.6.0.u43
-LIBRARY_PATH="D\:\\Users\\Administrator\\MyEclipse Professional\\binary\\com.sun.java.jdk.win32.x86_64_1.6.0.u43\\bin;D\:\\\u7406\u535A\u8F6F\u4EF6\\apache-tomcat-6.0.44\\bin"
+ENDORSED_DIRS="M\:\\servers\\apache-tomcat-6.0.44/common/endorsed"
+JDK_HOME=M\:\\Java\\jdk1.8.0_91
+JDK_INSTALLATION_NAME=jdk1.8.0_91
+LIBRARY_PATH="M\:\\Java\\jdk1.8.0_91\\bin;M\:\\servers\\apache-tomcat-6.0.44\\bin"
 SERVER_ENABLEMENT=true
 TOMCAT_BASE=M\:\\servers\\apache-tomcat-6.0.44
 TOMCAT_HOME=M\:\\servers\\apache-tomcat-6.0.44

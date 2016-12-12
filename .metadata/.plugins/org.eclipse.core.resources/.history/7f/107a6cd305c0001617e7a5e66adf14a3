@@ -1,0 +1,73 @@
+package com.film.po;
+
+import java.util.HashSet;
+import java.util.Set;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+
+/**
+ * Filmtype entity. @author MyEclipse Persistence Tools
+ */
+@Entity
+@Table(name = "FILMTYPE", schema = "SCOTT")
+public class Filmtype implements java.io.Serializable {
+
+	// Fields
+
+	private Integer typeid;
+	private String typename;
+	private Set<Filminfo> filminfos = new HashSet<Filminfo>(0);
+
+	// Constructors
+
+	/** default constructor */
+	public Filmtype() {
+	}
+
+	/** minimal constructor */
+	public Filmtype(Integer typeid) {
+		this.typeid = typeid;
+	}
+
+	/** full constructor */
+	public Filmtype(Integer typeid, String typename, Set<Filminfo> filminfos) {
+		this.typeid = typeid;
+		this.typename = typename;
+		this.filminfos = filminfos;
+	}
+
+	// Property accessors
+	@Id
+	@Column(name = "TYPEID", unique = true, nullable = false, precision = 6, scale = 0)
+	public Integer getTypeid() {
+		return this.typeid;
+	}
+
+	public void setTypeid(Integer typeid) {
+		this.typeid = typeid;
+	}
+
+	@Column(name = "TYPENAME", length = 64)
+	public String getTypename() {
+		return this.typename;
+	}
+
+	public void setTypename(String typename) {
+		this.typename = typename;
+	}
+
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "filmtype")
+	public Set<Filminfo> getFilminfos() {
+		return this.filminfos;
+	}
+
+	public void setFilminfos(Set<Filminfo> filminfos) {
+		this.filminfos = filminfos;
+	}
+
+}

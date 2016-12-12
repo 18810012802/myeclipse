@@ -1,0 +1,29 @@
+package com.libo.po;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * Student entity. @author MyEclipse Persistence Tools
+ */
+@Entity
+@Table(name = "STUDENT", schema = "SCOTT")
+public class Student extends AbstractStudent implements java.io.Serializable {
+
+	// Constructors
+
+	/** default constructor */
+	public Student() {
+	}
+
+	/** minimal constructor */
+	public Student(Integer sid) {
+		super(sid);
+	}
+
+	/** full constructor */
+	public Student(Integer sid, String sname) {
+		super(sid, sname);
+	}
+
+}

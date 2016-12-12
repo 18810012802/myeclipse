@@ -1,0 +1,9 @@
+package com.film.dao;
+
+import java.util.List;
+
+public interface FilmDao {
+	public List query();
+	public void add(Filminfo t);
+	
+}

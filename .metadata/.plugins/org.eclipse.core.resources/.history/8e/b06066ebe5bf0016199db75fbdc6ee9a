@@ -1,0 +1,21 @@
+package com.libo.main;
+
+
+
+public class Main {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO 自动生成的方法存根
+		/*Session session=HibernateUtil.getSession();
+		Teacher t=new Teacher();
+		t.setTname("t1");
+		Student s1=new Student();
+		s1.setSname("S1");
+		//s1.getTeachers().add(s1);
+		//t.getStudents().add(s1);
+		session.save(t);*/
+	}
+}

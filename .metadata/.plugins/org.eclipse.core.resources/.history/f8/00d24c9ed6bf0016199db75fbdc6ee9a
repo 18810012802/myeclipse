@@ -1,0 +1,56 @@
+package com.libo.po;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+/**
+ * AbstractStudent entity provides the base persistence definition of the
+ * Student entity. @author MyEclipse Persistence Tools
+ */
+@MappedSuperclass
+public abstract class AbstractStudent implements java.io.Serializable {
+
+	// Fields
+
+	private Integer sid;
+	private String sname;
+
+	// Constructors
+
+	/** default constructor */
+	public AbstractStudent() {
+	}
+
+	/** minimal constructor */
+	public AbstractStudent(Integer sid) {
+		this.sid = sid;
+	}
+
+	/** full constructor */
+	public AbstractStudent(Integer sid, String sname) {
+		this.sid = sid;
+		this.sname = sname;
+	}
+
+	// Property accessors
+	@Id
+	@Column(name = "SID", unique = true, nullable = false, precision = 6, scale = 0)
+	public Integer getSid() {
+		return this.sid;
+	}
+
+	public void setSid(Integer sid) {
+		this.sid = sid;
+	}
+
+	@Column(name = "SNAME", length = 64)
+	public String getSname() {
+		return this.sname;
+	}
+
+	public void setSname(String sname) {
+		this.sname = sname;
+	}
+
+}

@@ -1,0 +1,65 @@
+package com.film.servlet;
+
+import java.io.IOException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.libo.dao.TSDao;
+import com.libo.dao.TSDaoImpl;
+import com.libo.po.Student;
+import com.libo.po.Teacher;
+
+public class STServlet extends HttpServlet {
+	public void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String type = request.getParameter("type");
+		//Users user = (Users) request.getSession().getAttribute("user");
+		if("add".equals(type)){
+			Teacher t=new Teacher();
+			Student s=new Student();
+			String tname=request.getParameter("tname");
+			String sname=request.getParameter("sname");
+			s.setSname(sname);
+			t.setTname(tname);
+			t.getStudents().add(s);
+			TSDao tsd=new TSDaoImpl();
+			tsd.add(t);
+			List<Teacher> msgs=tsd.query();
+			request.setAttribute("msgs", msgs);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		}else{
+			TSDao tsd=new TSDaoImpl();
+			List<Teacher> msgs=tsd.query();
+			request.setAttribute("msgs", msgs);
+			request.getRequestDispatcher("index.jsp").forward(request, response);
+		}
+	}
+	/**
+	 * 字符串转换成日期
+	 * @param houseDate
+	 * @return
+	 */
+	public Date strToDate(String houseDate) {
+		Date date = null;
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		try {
+			date = sdf.parse(houseDate);
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return date;
+	}
+}

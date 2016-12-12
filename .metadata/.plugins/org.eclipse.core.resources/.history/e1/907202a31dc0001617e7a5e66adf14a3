@@ -1,0 +1,19 @@
+$(function(){
+	$.ajax({
+		type : 'POST',
+		url : 'FilmServlet',
+		data : {
+			type : 'filmType',
+		},
+		success : function(msgs) {
+			//alert(msg);
+			msg=eval("("+msgs+")");
+			for(var i=0;i<msg.length;i++){
+				var ms=msg[i];
+				alert(msg[i]);
+				$("#filmType").append("<option value="+ms.typeId+">"+ms.typeName+"</option>);");
+			}
+		}
+	});
+});
+

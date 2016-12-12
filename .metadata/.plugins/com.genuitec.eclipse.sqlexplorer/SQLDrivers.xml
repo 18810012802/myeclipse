@@ -168,6 +168,20 @@
     <Bean Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriver">
         <driverClassName>oracle.jdbc.OracleDriver</driverClassName>
         <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>54e9c4fc:158ed4b9fdc:-7f8f</string>
+        </identifier>
+        <jarFileName/>
+        <jarFileNames Indexed="true">
+            <Bean Class="net.sourceforge.squirrel_sql.fw.util.beanwrapper.StringWrapper">
+                <string>M:\app\mqy-1\product\11.2.0\dbhome_1\jdbc\lib\ojdbc6.jar</string>
+            </Bean>
+        </jarFileNames>
+        <name>MyEclipseDriverName0</name>
+        <url>jdbc:oracle:thin:@localhost:1521:orcl</url>
+    </Bean>
+    <Bean Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriver">
+        <driverClassName>oracle.jdbc.OracleDriver</driverClassName>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
             <string>3e744b2:158ce799edb:-7f92</string>
         </identifier>
         <jarFileName/>

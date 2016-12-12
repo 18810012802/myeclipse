@@ -1,6 +1,0 @@
-package com.libo.service;
-
-
-public class StuImpl implements StuService {
-
-}

@@ -1,0 +1,67 @@
+package com.film.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import org.activiti.engine.impl.util.json.JSONArray;
+import org.activiti.engine.impl.util.json.JSONObject;
+import org.hibernate.Session;
+import org.hibernate.transform.Transformers;
+import org.hibernate.type.StandardBasicTypes;
+
+import com.film.po.Filminfo;
+import com.libo.util.HibernateUtil;
+
+public class FilmDaoImpl implements FilmDao {
+
+	@Override
+	public List<Filminfo> query() {
+		// TODO 自动生成的方法存根
+		Session session=HibernateUtil.getSession();
+		List<Filminfo> list=session.createSQLQuery("select * from filminfo")
+                .addEntity(Filminfo.class)
+                //.setInteger("stuId", 2)
+                .list();
+		return list;
+	}
+
+	@Override
+	public void add(Filminfo fi) {
+		// TODO 自动生成的方法存根
+		Session session=HibernateUtil.getSession();
+		session.save(fi);
+	}
+
+	@Override
+	public String queryFilmTypes() {
+		// TODO 自动生成的方法存根
+		Session session=HibernateUtil.getSession();
+		List<Map> list=session.createSQLQuery("select * from filmtype")
+				/*.addScalar("filmname",StandardBasicTypes.STRING)
+	            .addScalar("actor",StandardBasicTypes.STRING)
+	            .addScalar("director",StandardBasicTypes.STRING)
+	            .addScalar("typeId",StandardBasicTypes.INTEGER)*/
+				.addScalar("typeId",StandardBasicTypes.INTEGER)
+	            .addScalar("typeName",StandardBasicTypes.STRING)
+	            .setResultTransformer(Transformers.ALIAS_TO_ENTITY_MAP)
+	            .list();
+		JSONArray ja=new JSONArray();
+		for(Map m:list){
+			ja.put(m);
+		}
+		return ja.toString();
+	}
+
+	@Override
+	public List queryCre(Filminfo fi) {
+		// TODO 自动生成的方法存根
+		Session session=HibernateUtil.getSession();
+		List list2 = session
+                .createCriteria(Classes.class);
+                /*.add(Restrictions.gt("clsId", 0))
+                .setFetchMode("students", FetchMode.JOIN)*/
+
+		return null;
+	}
+
+}

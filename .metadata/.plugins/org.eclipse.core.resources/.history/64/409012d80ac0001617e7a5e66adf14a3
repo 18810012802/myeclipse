@@ -1,0 +1,11 @@
+package com.film.dao;
+
+import java.util.List;
+
+import com.film.po.Filminfo;
+
+public interface FilmDao {
+	public List query(String sql);
+	public void add(Filminfo t);
+	
+}

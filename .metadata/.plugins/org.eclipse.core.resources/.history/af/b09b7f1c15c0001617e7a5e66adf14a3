@@ -1,0 +1,17 @@
+$(function(){
+	$.ajax({
+		type : 'POST',
+		url : 'FilmServlet',
+		data : {
+			type : 'filmType',
+		},
+		success : function(msg) {
+			for(var i=0;i<msg.length;i++){
+				var ms=msg[i];
+				$("#houseType").append("<option value="+ms.id+">"+ms.name+"</option>);");
+			}
+		}
+
+	});
+});
+

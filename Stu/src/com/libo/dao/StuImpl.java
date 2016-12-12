@@ -3,6 +3,7 @@ package com.libo.dao;
 import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.sql.Types;
 import java.util.List;
 
 import org.hibernate.CacheMode;
@@ -146,13 +147,20 @@ public class StuImpl implements StuDao {
 		session.close();
 		*/
 		//Session session=HibernateUtil.getSession();
+		
 		session.doWork(new Work() {
 			@Override
 			public void execute(Connection conn) throws SQLException {
-				CallableStatement cs=conn.prepareCall("{call insert_emp}");
-				cs.executeUpdate();
+				String res="";
+				CallableStatement cs=conn.prepareCall("{call stu(111,'sdvf',3,19,?)}");
+				cs.registerOutParameter(1, Types.VARCHAR);
+				cs.execute();
+				res=cs.getObject(1).toString();
+				System.out.println(res);
 			}
 		});
+		session.getTransaction().commit();
+		session.close();
 	}
 
 	private void addStudents(List<Students> stus) throws Exception {

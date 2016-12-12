@@ -1,0 +1,71 @@
+package com.libo.po;
+
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.MappedSuperclass;
+
+
+/**
+ * AbstractTeacher entity provides the base persistence definition of the Teacher entity. @author MyEclipse Persistence Tools
+ */
+@MappedSuperclass
+
+public abstract class AbstractTeacher  implements java.io.Serializable {
+
+
+    // Fields    
+
+     private Integer tid;
+     private String tname;
+
+
+    // Constructors
+
+    /** default constructor */
+    public AbstractTeacher() {
+    }
+
+	/** minimal constructor */
+    public AbstractTeacher(Integer tid) {
+        this.tid = tid;
+    }
+    
+    /** full constructor */
+    public AbstractTeacher(Integer tid, String tname) {
+        this.tid = tid;
+        this.tname = tname;
+    }
+
+   
+    // Property accessors
+    @Id 
+    
+    @Column(name="TID", unique=true, nullable=false, precision=6, scale=0)
+
+    public Integer getTid() {
+        return this.tid;
+    }
+    
+    public void setTid(Integer tid) {
+        this.tid = tid;
+    }
+    
+    @Column(name="TNAME", length=64)
+
+    public String getTname() {
+        return this.tname;
+    }
+    
+    public void setTname(String tname) {
+        this.tname = tname;
+    }
+   
+
+
+
+
+
+
+
+
+}

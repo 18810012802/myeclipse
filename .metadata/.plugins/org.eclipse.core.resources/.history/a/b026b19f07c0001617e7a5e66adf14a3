@@ -1,0 +1,21 @@
+package com.film.dao;
+
+import java.util.List;
+
+import com.film.po.Filminfo;
+
+public class FilmDaoImpl implements FilmDao {
+
+	@Override
+	public List query() {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+	@Override
+	public void add(Filminfo t) {
+		// TODO 自动生成的方法存根
+
+	}
+
+}
