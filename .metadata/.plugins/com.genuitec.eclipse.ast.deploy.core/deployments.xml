@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <deployments>
-  <deployment context-root="/Hiber5_mtm_annot" deployment-path="M:/servers/apache-tomcat-6.0.44/webapps/Hiber5_mtm_annot" project-name="Hiber5_mtm_annot" server-id="tomcat6Server" state="REDEPLOY" status="Deployment is out of date due to changes in the underlying project contents. You'll need to manually 'Redeploy' the project to update the deployed archive." type="WEB"/>
-  <deployment context-root="/Stu" deployment-path="M:/servers/apache-tomcat-6.0.44/webapps/Stu" project-name="Stu" server-id="tomcat6Server" state="DEPLOYED" type="WEB"/>
+  <deployment alt-context-root="" context-root="/Hiber5_mtm_annot" deployment-path="M:/servers/apache-tomcat-6.0.44/webapps/Hiber5_mtm_annot" project-name="Hiber5_mtm_annot" server-id="tomcat6Server" state="REDEPLOY" status="Deployment is out of date due to changes in the underlying project contents. You'll need to manually 'Redeploy' the project to update the deployed archive." type="WEB"/>
+  <deployment alt-context-root="" context-root="/Stu" deployment-path="M:/servers/apache-tomcat-6.0.44/webapps/Stu" project-name="Stu" server-id="tomcat6Server" state="DEPLOYED" type="WEB"/>
+  <deployment context-root="/EasyUI" deployment-path="Q:/workbench/myeclipse/.metadata/.me_tcat7/webapps/EasyUI" project-name="EasyUI" server-id="myeclipseTomcatServer7" should-backup="true" state="DEPLOYED" type="WEB"/>
 </deployments>

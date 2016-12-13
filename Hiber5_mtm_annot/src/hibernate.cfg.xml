@@ -23,7 +23,9 @@
 		<mapping class="com.libo.po.Teacher" />
 		<mapping class="com.film.po.Filminfo" />
 		<mapping class="com.film.po.Filmtype" />
-
+		<event type="load">
+			<listener class="com.libo.listener"/>
+		</event>
 	</session-factory>
 
 </hibernate-configuration>

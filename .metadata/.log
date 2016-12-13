@@ -10897,3 +10897,338 @@ java.util.MissingResourceException: Can't find resource for bundle java.util.Pro
 
 !ENTRY org.eclipse.m2e.logback.appender 4 0 2016-12-12 20:50:16.022
 !MESSAGE Unable to update index for central|http://repo.maven.apache.org/maven2
+!SESSION 2016-12-13 10:35:54.380 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_43
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2016-12-13 10:36:07.666
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-12-13 10:36:07.666
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,编辑,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,除去,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,编辑,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,剪切,
+		将选择的内容剪切到剪贴板中,
+		Category(org.eclipse.ui.category.edit,编辑,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@53dba43d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.team.core 4 0 2016-12-13 10:36:08.964
+!MESSAGE 未能实例化项目 MessageSystem 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+!STACK 1
+org.eclipse.team.core.TeamException: 未能实例化项目 MessageSystem 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.modifyRule(Rules.java:145)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1401)
+	at com.genuitec.eclipse.easie.runtime.internal.ServerRuntimeManagerImpl$2.runInWorkspace(ServerRuntimeManagerImpl.java:142)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2016-12-13 10:36:08.965
+!MESSAGE 未能实例化项目 MessageSystem 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+
+!ENTRY org.eclipse.team.core 4 0 2016-12-13 10:36:08.976
+!MESSAGE 未能实例化项目 Project11-9 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+!STACK 1
+org.eclipse.team.core.TeamException: 未能实例化项目 Project11-9 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.modifyRule(Rules.java:145)
+	at org.eclipse.core.internal.resources.Project.touch(Project.java:1401)
+	at com.genuitec.eclipse.easie.runtime.internal.ServerRuntimeManagerImpl$2.runInWorkspace(ServerRuntimeManagerImpl.java:142)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2016-12-13 10:36:08.977
+!MESSAGE 未能实例化项目 Project11-9 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-12-13 10:36:14.002
+!MESSAGE Unable to update index for central|http://repo.maven.apache.org/maven2
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2016-12-13 10:36:18.286
+!MESSAGE 从插件调用代码时出现问题：“org.eclipse.equinox.preferences”。
+!STACK 0
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key totalnumber
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:374)
+	at java.util.ResourceBundle.getString(ResourceBundle.java:334)
+	at org.eclipse.wst.sse.core.internal.encoding.CommonCharsetNames.initHashTables(CommonCharsetNames.java:233)
+	at org.eclipse.wst.sse.core.internal.encoding.CommonCharsetNames.getEncodings(CommonCharsetNames.java:148)
+	at org.eclipse.wst.sse.core.internal.encoding.CommonCharsetNames.getPreferredDefaultIanaName(CommonCharsetNames.java:191)
+	at org.eclipse.jst.jsp.core.internal.preferences.JSPCorePreferenceInitializer.initializeDefaultPreferences(JSPCorePreferenceInitializer.java:37)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:166)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:237)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:663)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.node(DefaultPreferences.java:153)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getDefaultPreferences(PreferenceForwarder.java:130)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getString(PreferenceForwarder.java:636)
+	at org.eclipse.jst.jsp.core.taglib.TaglibIndex.getState(TaglibIndex.java:776)
+	at org.eclipse.jst.jsp.core.taglib.TaglibIndex.initializeInstance(TaglibIndex.java:647)
+	at org.eclipse.jst.jsp.core.taglib.TaglibIndex.startup(TaglibIndex.java:601)
+	at org.eclipse.jst.jsp.core.internal.JSPCorePlugin.start(JSPCorePlugin.java:77)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.wst.validation.Validator$V2.getValidator(Validator.java:1050)
+	at org.eclipse.wst.validation.Validator$V2.getDelegatedValidator(Validator.java:1007)
+	at org.eclipse.wst.validation.Validator$V2.validationStarting(Validator.java:1285)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$4.visit(ValBuilderJob.java:172)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:785)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:176)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2016-12-13 11:41:18.036
+!MESSAGE Checkpointing JSP tags failed
+!STACK 0
+java.io.FileNotFoundException: D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsf.core\.jsptagregistry\Project_Hiber2_7f783ce0.idx (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.MasterIndex$ProjectIndex.save(MasterIndex.java:389)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.TagRepository.save(TagRepository.java:83)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.PersistedDataTagStrategy.save(PersistedDataTagStrategy.java:157)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDTagRegistry.checkpoint(TLDTagRegistry.java:153)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDRegistryManager$MyWorkspaceSaveParticipant.saveProject(TLDRegistryManager.java:232)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDRegistryManager$MyWorkspaceSaveParticipant.saving(TLDRegistryManager.java:196)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SESSION 2016-12-13 14:35:51.694 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_43
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2016-12-13 14:36:06.036
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-12-13 14:36:06.036
+!MESSAGE A conflict occurred for SHIFT+DEL:
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.topcased.modeler.deleteModelObject,Delete From Model,
+		Allows the user to delete the selected graph element and its associated model element in a Topcased editor.,
+		Category(org.eclipse.ui.category.edit,编辑,null,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.graphiti.ui.internal.action.RemoveAction,除去,
+		Remove selected Pictogram Elements,
+		Category(org.eclipse.graphiti.ui.Graphiti_Category,编辑,Graphiti Diagram Editor,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(SHIFT+DEL,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.cut,剪切,
+		将选择的内容剪切到剪贴板中,
+		Category(org.eclipse.ui.category.edit,编辑,null,true),
+		org.eclipse.ui.internal.handlers.WidgetMethodHandler@54eaa827,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.dialogAndWindow,,,system)
+
+!ENTRY org.eclipse.team.core 4 0 2016-12-13 14:36:09.162
+!MESSAGE 未能实例化项目 Project11-9 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+!STACK 1
+org.eclipse.team.core.TeamException: 未能实例化项目 Project11-9 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.modifyRule(Rules.java:145)
+	at com.genuitec.eclipse.migration.core.project.internal.ProjectMigrationCandidatesJob.processMigrationCandidates(ProjectMigrationCandidatesJob.java:108)
+	at com.genuitec.eclipse.migration.core.project.internal.ProjectMigrationCandidatesJob.run(ProjectMigrationCandidatesJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2016-12-13 14:36:09.163
+!MESSAGE 未能实例化项目 Project11-9 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+
+!ENTRY org.eclipse.team.core 4 0 2016-12-13 14:36:09.189
+!MESSAGE 未能实例化项目 MessageSystem 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+!STACK 1
+org.eclipse.team.core.TeamException: 未能实例化项目 MessageSystem 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+	at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:165)
+	at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:235)
+	at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:507)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+	at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+	at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:93)
+	at org.eclipse.core.internal.resources.Rules.modifyRule(Rules.java:145)
+	at com.genuitec.eclipse.migration.core.project.internal.ProjectMigrationCandidatesJob.processMigrationCandidates(ProjectMigrationCandidatesJob.java:108)
+	at com.genuitec.eclipse.migration.core.project.internal.ProjectMigrationCandidatesJob.run(ProjectMigrationCandidatesJob.java:73)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2016-12-13 14:36:09.189
+!MESSAGE 未能实例化项目 MessageSystem 的提供程序 org.tigris.subversion.subclipse.core.svnnature。
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-12-13 14:36:13.593
+!MESSAGE Unable to update index for central|http://repo.maven.apache.org/maven2
+
+!ENTRY org.eclipse.equinox.preferences 4 2 2016-12-13 14:36:14.369
+!MESSAGE 从插件调用代码时出现问题：“org.eclipse.equinox.preferences”。
+!STACK 0
+java.util.MissingResourceException: Can't find resource for bundle java.util.PropertyResourceBundle, key totalnumber
+	at java.util.ResourceBundle.getObject(ResourceBundle.java:374)
+	at java.util.ResourceBundle.getString(ResourceBundle.java:334)
+	at org.eclipse.wst.sse.core.internal.encoding.CommonCharsetNames.initHashTables(CommonCharsetNames.java:233)
+	at org.eclipse.wst.sse.core.internal.encoding.CommonCharsetNames.getEncodings(CommonCharsetNames.java:148)
+	at org.eclipse.wst.sse.core.internal.encoding.CommonCharsetNames.getPreferredDefaultIanaName(CommonCharsetNames.java:191)
+	at org.eclipse.jst.jsp.core.internal.preferences.JSPCorePreferenceInitializer.initializeDefaultPreferences(JSPCorePreferenceInitializer.java:37)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper$1.run(PreferenceServiceRegistryHelper.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.runInitializer(PreferenceServiceRegistryHelper.java:303)
+	at org.eclipse.core.internal.preferences.PreferenceServiceRegistryHelper.applyRuntimeDefaults(PreferenceServiceRegistryHelper.java:131)
+	at org.eclipse.core.internal.preferences.PreferencesService.applyRuntimeDefaults(PreferencesService.java:368)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.applyRuntimeDefaults(DefaultPreferences.java:166)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.load(DefaultPreferences.java:237)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.create(EclipsePreferences.java:409)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.internalNode(EclipsePreferences.java:663)
+	at org.eclipse.core.internal.preferences.DefaultPreferences.node(DefaultPreferences.java:153)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getDefaultPreferences(PreferenceForwarder.java:130)
+	at org.eclipse.core.internal.preferences.legacy.PreferenceForwarder.getString(PreferenceForwarder.java:636)
+	at org.eclipse.jst.jsp.core.taglib.TaglibIndex.getState(TaglibIndex.java:776)
+	at org.eclipse.jst.jsp.core.taglib.TaglibIndex.initializeInstance(TaglibIndex.java:647)
+	at org.eclipse.jst.jsp.core.taglib.TaglibIndex.startup(TaglibIndex.java:601)
+	at org.eclipse.jst.jsp.core.internal.JSPCorePlugin.start(JSPCorePlugin.java:77)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:300)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:263)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:469)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:395)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:464)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:421)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.eclipse.osgi.internal.loader.BundleLoader.loadClass(BundleLoader.java:340)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:229)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1212)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.wst.validation.Validator$V2.getValidator(Validator.java:1050)
+	at org.eclipse.wst.validation.Validator$V2.getDelegatedValidator(Validator.java:1007)
+	at org.eclipse.wst.validation.Validator$V2.validationStarting(Validator.java:1285)
+	at org.eclipse.wst.validation.internal.ValBuilderJob$4.visit(ValBuilderJob.java:172)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:785)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:176)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2016-12-13 19:00:55.727
+!MESSAGE Checkpointing JSP tags failed
+!STACK 0
+java.io.FileNotFoundException: D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsf.core\.jsptagregistry\Project_EasyUI_68d15a3.idx (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.MasterIndex$ProjectIndex.save(MasterIndex.java:389)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.TagRepository.save(TagRepository.java:83)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.PersistedDataTagStrategy.save(PersistedDataTagStrategy.java:157)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDTagRegistry.checkpoint(TLDTagRegistry.java:153)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDRegistryManager$MyWorkspaceSaveParticipant.saveProject(TLDRegistryManager.java:232)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDRegistryManager$MyWorkspaceSaveParticipant.saving(TLDRegistryManager.java:196)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.jst.jsf.core 4 0 2016-12-13 19:00:55.727
+!MESSAGE Checkpointing JSP tags failed
+!STACK 0
+java.io.FileNotFoundException: D:\myeclipse\.metadata\.plugins\org.eclipse.jst.jsf.core\.jsptagregistry\Project_Hiber2_7f783ce0.idx (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:194)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:145)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.MasterIndex$ProjectIndex.save(MasterIndex.java:389)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.TagRepository.save(TagRepository.java:83)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.persistence.PersistedDataTagStrategy.save(PersistedDataTagStrategy.java:157)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDTagRegistry.checkpoint(TLDTagRegistry.java:153)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDRegistryManager$MyWorkspaceSaveParticipant.saveProject(TLDRegistryManager.java:232)
+	at org.eclipse.jst.jsf.designtime.internal.view.model.jsp.registry.TLDRegistryManager$MyWorkspaceSaveParticipant.saving(TLDRegistryManager.java:196)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:383)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:192)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:195)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1130)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2375)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$5.run(IDEWorkbenchAdvisor.java:508)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY org.eclipse.core.resources 4 566 2016-12-13 19:00:58.834
+!MESSAGE 工作空间未正确地初始化或者已关闭。

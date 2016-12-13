@@ -1,4 +1,235 @@
-2016-12-11 18:34:06 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
-信息: Package starting up at Sun Dec 11 18:34:06 CST 2016
-2016-12-11 18:34:07 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
-信息: Latest version of package has already been enabled in the workspace; check finished in 57ms
+2016-12-12 5:59:02 com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+信息: Package starting up at Mon Dec 12 05:59:02 CST 2016
+2016-12-12 5:59:07 com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+信息: Latest version of package has already been enabled in the workspace; check finished in 74ms
+2016-12-12 8:54:11 org.hibernate.cfg.Environment <clinit>
+信息: Hibernate 3.2.5
+2016-12-12 8:54:11 org.hibernate.cfg.Environment <clinit>
+信息: hibernate.properties not found
+2016-12-12 8:54:11 org.hibernate.cfg.Environment buildBytecodeProvider
+信息: Bytecode provider name : cglib
+2016-12-12 8:54:11 org.hibernate.cfg.Environment <clinit>
+信息: using JDK 1.4 java.sql.Timestamp handling
+2016-12-12 8:54:11 org.hibernate.cfg.Configuration configure
+信息: configuring from XML document
+2016-12-12 8:54:11 org.hibernate.cfg.Configuration doConfigure
+信息: Configured SessionFactory: null
+2016-12-12 8:54:11 org.hibernate.connection.DriverManagerConnectionProvider configure
+信息: Using Hibernate built-in connection pool (not for production use!)
+2016-12-12 8:54:11 org.hibernate.connection.DriverManagerConnectionProvider configure
+信息: Hibernate connection pool size: 20
+2016-12-12 8:54:11 org.hibernate.connection.DriverManagerConnectionProvider configure
+信息: autocommit mode: true
+2016-12-12 8:54:11 org.hibernate.connection.DriverManagerConnectionProvider configure
+信息: using driver: oracle.jdbc.OracleDriver at URL: jdbc:oracle:thin:@localhost:1521:orcl
+2016-12-12 8:54:11 org.hibernate.connection.DriverManagerConnectionProvider configure
+信息: connection properties: {user=scott, password=****, autocommit=true}
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: RDBMS: Oracle, version: Oracle Database 11g Enterprise Edition Release 11.2.0.1.0 - 64bit Production
+With the Partitioning, OLAP, Data Mining and Real Application Testing options
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC driver: Oracle JDBC driver, version: 11.2.0.1.0
+2016-12-12 8:54:11 org.hibernate.dialect.Dialect <init>
+信息: Using dialect: org.hibernate.dialect.Oracle9Dialect
+2016-12-12 8:54:11 org.hibernate.dialect.Oracle9Dialect <init>
+警告: The Oracle9Dialect dialect has been deprecated; use either Oracle9iDialect or Oracle10gDialect instead
+2016-12-12 8:54:11 org.hibernate.transaction.TransactionFactoryFactory buildTransactionFactory
+信息: Using default transaction strategy (direct JDBC transactions)
+2016-12-12 8:54:11 org.hibernate.transaction.TransactionManagerLookupFactory getTransactionManagerLookup
+信息: No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Automatic flush during beforeCompletion(): disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Automatic session close at end of transaction: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC batch size: 15
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC batch updates for versioned data: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Scrollable result sets: enabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JDBC3 getGeneratedKeys(): disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Connection release mode: auto
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Default batch fetch size: 1
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Generate SQL with comments: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Order SQL updates by primary key: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Order SQL inserts for batching: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory createQueryTranslatorFactory
+信息: Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+2016-12-12 8:54:11 org.hibernate.hql.ast.ASTQueryTranslatorFactory <init>
+信息: Using ASTQueryTranslatorFactory
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Query language substitutions: {}
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: JPA-QL strict compliance: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Second-level cache: enabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Query cache: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory createCacheProvider
+信息: Cache provider: org.hibernate.cache.NoCacheProvider
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Optimize cache for minimal puts: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Structured second-level cache entries: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Echoing all SQL to stdout
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Statistics: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Deleted entity synthetic identifier rollback: disabled
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Default entity-mode: pojo
+2016-12-12 8:54:11 org.hibernate.cfg.SettingsFactory buildSettings
+信息: Named query checking : enabled
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=DEPT, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=EMP, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=BONUS, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=SALGRADE, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=STUDENT, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=TEACHER, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=CLASSES, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=STUDENTS, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=S_T, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=FILMINFO, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.cfg.reveng.dialect.OracleMetaDataDialect$1 convertRow
+信息: {TABLE_NAME=FILMTYPE, REMARKS=null, TABLE_TYPE=TABLE, TABLE_SCHEM=SCOTT, TABLE_CAT=null}
+2016-12-12 8:54:11 org.hibernate.connection.DriverManagerConnectionProvider close
+信息: cleaning up connection pool: jdbc:oracle:thin:@localhost:1521:orcl
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ************************************************************** 
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Starting Jakarta Velocity v1.4
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: RuntimeInstance initializing.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Trying to use logger class org.apache.velocity.tools.generic.log.CommonsLogLogSystem
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Using logger class org.apache.velocity.tools.generic.log.CommonsLogLogSystem
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: FileResourceLoader : initialization starting.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: FileResourceLoader : adding path '.'
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: FileResourceLoader : initialization complete.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ClasspathResourceLoader : initialization starting.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ClasspathResourceLoader : initialization complete.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Default ResourceManager initialization complete.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Created: 20 parsers.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : initialization starting.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : allowInline = true : VMs can be defined inline in templates
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : messages on  : VM system will output logging messages
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : autoload off  : VM system will not automatically reload global library macros
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocimacro : initialization complete.
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: Velocity successfully started.
+2016-12-12 8:54:11 org.hibernate.tool.Version <clinit>
+信息: Hibernate Tools 3.2.4.CR1
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Pojo.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoTypeDeclaration.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:11 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3TypeDeclaration.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoFields.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoConstructors.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoPropertyAccessors.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoToString.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoEqualsHashcode.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoExtraClassCode.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 com.genuitec.eclipse.hibernate.tool.hbm2x.VelocityProducer secondPass
+信息: Writing Pojo to Q:\workbench\myeclipse\Hiber5_mtm_annot\src\com\film\po\Filminfo.java
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Pojo.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoTypeDeclaration.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3TypeDeclaration.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoFields.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoConstructors.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoPropertyAccessors.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/Ejb3PropertyGetAnnotation.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoToString.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoEqualsHashcode.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 org.apache.velocity.tools.generic.log.CommonsLogLogSystem logVelocityMessage
+信息: ResourceManager : found pojo/PojoExtraClassCode.vm with loader org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+2016-12-12 8:54:12 com.genuitec.eclipse.hibernate.tool.hbm2x.VelocityProducer secondPass
+信息: Writing Pojo to Q:\workbench\myeclipse\Hiber5_mtm_annot\src\com\film\po\Filmtype.java
+2016-12-12 8:54:25 org.hibernate.connection.DriverManagerConnectionProvider close
+信息: cleaning up connection pool: jdbc:oracle:thin:@localhost:1521:orcl

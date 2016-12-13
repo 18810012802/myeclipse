@@ -92,9 +92,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
  	<td>${msg.director }</td>
  	<td>${msg.ticketprice }</td>
  	<td>
- 	
  	</td>
- 	
  	</tr>
  </c:forEach>
   </table>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="将包“com.libo.interceptor”复制到“Hiber5_mtm_annot/src”&#x0D;&#x0A;－ 原始项目：“Stu”&#x0D;&#x0A;－ 目标元素：“Hiber5_mtm_annot/src”&#x0D;&#x0A;－ 原始元素：“Stu/src/com.libo.interceptor”" description="复制包" destination="=Hiber5_mtm_annot/src" element1="/src&lt;com.libo.interceptor" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1481618594633" version="1.0"/>
+</session>

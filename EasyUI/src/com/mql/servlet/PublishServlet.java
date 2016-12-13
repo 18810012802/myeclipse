@@ -46,6 +46,18 @@ public class PublishServlet extends HttpServlet {
 			pw.write(ja.toString());
 			pw.close();
 			
+		}else if("ifexist".equals(type)){
+			Query q=new Query();
+			String name=request.getParameter("name");
+			int count=q.exist(name);
+			response.getWriter().write(count+"");
+			response.getWriter().close();
+		}else if("users".equals(type)){
+			Query q=new Query();
+			String name=request.getParameter("users");
+			String s=q.queryU().toString();
+			response.getWriter().write(s+"");
+			response.getWriter().close();
 		}else if ("del".equals(type)) {
 			Query ps = new Query();
 			int result = 0;

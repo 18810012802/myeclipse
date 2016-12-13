@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
 import com.mql.domain.User;
 
 public class Query extends BaseDao {
@@ -99,7 +102,28 @@ public class Query extends BaseDao {
 		}
 		return map;
 	}
-
+	public JSONArray queryU(){
+		JSONArray ja=new JSONArray();
+		String sql="select id,name,telephone from search_house.users";
+		try {
+			getConnection();
+			pst = conn.prepareStatement(sql);
+			rs = pst.executeQuery();
+			while (rs.next()) {
+				JSONObject jo=new JSONObject();
+				jo.put("id", rs.getInt(1));
+				jo.put("name",rs.getString(2));
+				jo.put("telephone", rs.getString(3));
+				ja.add(jo);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			// TODO: handle exception
+		} finally {
+			close();
+		}
+		return ja;
+	}
 	public String queryManuscripts(int page, int pageSize, String user) {
 		// TODO Auto-generated method stub
 		StringBuffer sb = new StringBuffer();
@@ -142,6 +166,22 @@ public class Query extends BaseDao {
 			sql += " where name like '%" + u + "%'";
 		}
 		try {
+			pst = conn.prepareStatement(sql);
+			rs = pst.executeQuery();
+			rs.next();
+			total = rs.getInt(1);
+
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return total;
+	}
+	public int exist(String name) {
+		int total = 0;
+		String sql = "select count(*) from search_house.users where name='"+name+"'";
+		try {
+			getConnection();
 			pst = conn.prepareStatement(sql);
 			rs = pst.executeQuery();
 			rs.next();

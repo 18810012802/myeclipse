@@ -15,5 +15,19 @@ $(function(){
 			}
 		}
 	});
+	$('#queryform:input[name="minticketprice"]')
+	.keyup(
+			function() {
+				var minticketprice = $('#queryform :input[name="minticketprice"]')
+						.val();
+				if (!/^[1-9]{1}[0-9]{1,4}$/.test(minticketprice)) {
+					$('#q1').remove();
+					$('#queryform :input[name="floorage"]')
+							.after(
+									"<span id='q1' style='color:red;'>请输入10到10000的数字！</span>");
+				} else {
+					$('#q1').remove();
+				}
+			});
 });
 

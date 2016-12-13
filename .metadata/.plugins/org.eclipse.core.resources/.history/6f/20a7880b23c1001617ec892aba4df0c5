@@ -1,0 +1,27 @@
+$(function(){
+
+	$("#myform :input[name='name']").keyup(function(){
+		var $name=$(this).val();
+		$.ajax({
+			url:'PublishServlet',
+			data:{
+				name:$name,
+				type:'ifexist'
+			},
+			success:function(msg){
+				
+				if(msg!='0'){
+					alert(msg);
+					$("#tip").remove();
+					$(this).after("<span id='tip' color='red'>用户已存在！</span>");
+				}else{
+					$("#tip").remove();
+					$(this).after("<span id='tip' color='green'>用户名OK！</span>");
+				}
+			},
+			dataType:'json'
+		});
+		
+		
+	});
+});

@@ -6,6 +6,9 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
+import com.libo.interceptor.MyInterceptor;
+import com.libo.listener.MyLoadListener;
+
 /**
  * Configures and provides access to Hibernate sessions, tied to the
  * current thread of execution.  Follows the Thread Local Session
@@ -29,10 +32,10 @@ public class HibernateUtil {
 
 	static {
     	try {
-			configuration.configure();
+			configuration.configure().setInterceptor(new MyInterceptor());
 			serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
 			sessionFactory = configuration.buildSessionFactory(serviceRegistry);
-		} catch (Exception e) {
+    	} catch (Exception e) {
 			System.err.println("%%%% Error Creating SessionFactory %%%%");
 			e.printStackTrace();
 		}

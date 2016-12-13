@@ -16,7 +16,7 @@
 <script src="js/jquery-1.9.1.js"></script>
 <script src="easyui\jquery.easyui.min.js"></script>
 <script src="easyui\locale\easyui-lang-zh_CN.js"></script>
-<script src="js/tree.js"></script>
+<script src="js/jquery.js"></script>
 <link rel="stylesheet" type="text/css"
 	href="easyui/themes/default/easyui.css" />
 <link rel="stylesheet" type="text/css" href="easyui/themes/icon.css" />
@@ -33,5 +33,11 @@
 	<ul id="box">
 		
 	</ul>
+	<form id="myform">
+		名字：<input type="text" name="name"/><span id='tip1'></span>
+	</form>
+	<table id="mytable" width="50%" align="center">
+		<tr><td>id</td><td>name</td><td>telephone</td></tr>
+	</table>
 </body>
 </html>
